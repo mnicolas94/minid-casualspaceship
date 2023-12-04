@@ -20,7 +20,7 @@ MonoBehaviour:
     rid: 1904655509916221440
   _notifyPlatform:
     rid: 3334506971384512512
-  _versioningStrategy: 0
+  _versioningStrategy: 1
   references:
     version: 2
     RefIds:
