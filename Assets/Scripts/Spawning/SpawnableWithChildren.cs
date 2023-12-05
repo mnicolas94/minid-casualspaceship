@@ -12,7 +12,8 @@ namespace Spawning
     public class SpawnableWithChildren : MonoBehaviour
     {
         private readonly Dictionary<GameObject, Vector3> _children = new ();
-
+        private bool _isDisableScheduled;
+        
         private void Start()
         {
             // cache children and their initial positions
@@ -27,6 +28,8 @@ namespace Spawning
 
         private void OnEnable()
         {
+            _isDisableScheduled = false;
+            
             // enable children and set initial position
             foreach (var (child, position) in _children)
             {
@@ -35,13 +38,23 @@ namespace Spawning
             }
         }
 
+        private void Update()
+        {
+            // this is to avoid disabling twice or more in the same frame
+            if (_isDisableScheduled)
+            {
+                gameObject.SetActive(false);
+                _isDisableScheduled = false;
+            }
+        }
+
         private void OnChildDisabled()
         {
             // check if all disabled
             var areAllDisabled = _children.All(child => !child.Key.activeSelf);
-            if (areAllDisabled && gameObject.activeSelf)
+            if (areAllDisabled)
             {
-                gameObject.SetActive(false);
+                _isDisableScheduled = true;
             }
         }
     }
