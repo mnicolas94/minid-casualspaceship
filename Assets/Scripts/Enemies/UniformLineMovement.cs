@@ -11,9 +11,9 @@ namespace Enemies
 
         private void FixedUpdate()
         {
-            var speed = _dir.normalized * (_speed.Value * Time.fixedDeltaTime);
+            var displacement = _dir.normalized * (_speed.Value * Time.fixedDeltaTime);
             var position = transform.position;
-            position += (Vector3) speed;
+            position += (Vector3) displacement;
             transform.position = position;
         }
     }

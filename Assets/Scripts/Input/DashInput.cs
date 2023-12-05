@@ -1,13 +1,12 @@
-﻿using System;
-using Actions;
+﻿using Actions;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace Input
 {
-    public class MoveInput : MonoBehaviour
+    public class DashInput : MonoBehaviour
     {
-        [SerializeField] private Movement _movement;
+        [SerializeField] private DashAction _dash;
         [SerializeField] private InputActionReference _inputActionReference;
 
         private InputAction _inputAction;
@@ -20,27 +19,18 @@ namespace Input
         private void OnEnable()
         {
             _inputAction.Enable();
+            _inputAction.performed += Dash;
         }
 
         private void OnDisable()
         {
             _inputAction.Disable();
+            _inputAction.performed -= Dash;
         }
 
-        private void Update()
+        private void Dash(InputAction.CallbackContext ctx)
         {
-            var inputValue = _inputAction.ReadValue<float>();
-
-            var pressed = inputValue > 0.5f;
-
-            if (pressed)
-            {
-                _movement.MoveUp();
-            }
-            else
-            {
-                _movement.MoveDown();
-            }
+            _dash.Dash();
         }
     }
 }
