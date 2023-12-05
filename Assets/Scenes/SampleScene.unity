@@ -217,6 +217,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11452418, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: singleton
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 22426080, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -5869,7 +5873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawnablePrefabs:
-  - {fileID: 8799613305788157857, guid: 396895948c8aeb44f97eb8f6ac6f19b6, type: 3}
+  - {fileID: -1978413719206743628, guid: 857167a7828d54c4597f7241088fd9e8, type: 3}
   - {fileID: -3452946430923793031, guid: e4c413bf89e7f2746a3f68833dee4e1c, type: 3}
   - {fileID: -6917328611313960888, guid: b36d16c1b184f694098316020d4252bc, type: 3}
   - {fileID: -3324615516644703150, guid: f28b15184804a4a4ba26c78f0a39fcc9, type: 3}
