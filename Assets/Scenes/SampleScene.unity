@@ -6545,10 +6545,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawnablePrefabs:
-  - {fileID: 2661351240284663351, guid: 60b7d37c00996884da44d4685098de36, type: 3}
-  - {fileID: -3452946430923793031, guid: e4c413bf89e7f2746a3f68833dee4e1c, type: 3}
-  - {fileID: -6917328611313960888, guid: b36d16c1b184f694098316020d4252bc, type: 3}
-  - {fileID: -3324615516644703150, guid: f28b15184804a4a4ba26c78f0a39fcc9, type: 3}
+  - Spawnable: {fileID: 2661351240284663351, guid: 60b7d37c00996884da44d4685098de36, type: 3}
+    Weight: 5
+  - Spawnable: {fileID: -3452946430923793031, guid: e4c413bf89e7f2746a3f68833dee4e1c, type: 3}
+    Weight: 1
+  - Spawnable: {fileID: -6917328611313960888, guid: b36d16c1b184f694098316020d4252bc, type: 3}
+    Weight: 1
+  - Spawnable: {fileID: -3324615516644703150, guid: f28b15184804a4a4ba26c78f0a39fcc9, type: 3}
+    Weight: 1
   _spawnCooldown:
     _usage: 0
     _value: 1
@@ -6720,5 +6724,5 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 203266131}
   - {fileID: 813098093}
-  - {fileID: 1682790220}
   - {fileID: 436134669}
+  - {fileID: 1682790220}

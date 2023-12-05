@@ -33,6 +33,7 @@ MonoBehaviour:
     - com.brunomikoski.animationsequencer
     - com.dbrizov
     - com.facticus.utils
+    - com.mackysoft.choice
     - com.mackysoft.serializereference-extensions
     - com.needle
     - com.openupm

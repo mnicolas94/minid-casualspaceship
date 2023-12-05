@@ -1,16 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using MackySoft.Choice;
+using TriInspector;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 using UnityEngine.Pool;
-using Utils.Extensions;
 using Random = UnityEngine.Random;
 
 namespace Spawning
 {
+    [Serializable]
+    public class SpawnableWeight
+    {
+        public Spawnable Spawnable;
+        public float Weight;
+    }
+    
     public class Spawner : MonoBehaviour
     {
-        [SerializeField] private List<Spawnable> _spawnablePrefabs;
+        [SerializeField, TableList] private List<SpawnableWeight> _spawnablePrefabs;
         [SerializeField] private FloatReference _spawnCooldown;
         [SerializeField] private Transform _spawnPoint;
 
@@ -48,7 +56,8 @@ namespace Spawning
 
         private void Spawn()
         {
-            var prefab = _spawnablePrefabs.GetRandom();
+            var weightedSelector = _spawnablePrefabs.ToWeightedSelector(item => item.Weight);
+            var prefab = weightedSelector.SelectItemWithUnityRandom().Spawnable;
             GetPrefabsPool(prefab).Get();
             
             // avoid double spawns in same frame
