@@ -32,6 +32,14 @@ namespace Spawning
 
         private bool CanSpawn => _triggersInside == 0 && Time.time >= _timeToSpawn;
 
+        public void Clear()
+        {
+            foreach (var (prefab, pool) in _prefabsPool)
+            {
+                pool.Clear();
+            }
+        }
+        
         private void Update()
         {
             if (CanSpawn)
