@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: The Solar Moose
-  productName: Unity Project Template
+  companyName: Mini D Games
+  productName: Casual Spaceship (Temporal name)
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -160,7 +160,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.TheSolarMoose.UnityProjectTemplate
-    Standalone: com.The-Solar-Moose.Unity-Project-Template
+    Standalone: com.Mini-D-Games.Casual-Spaceship--Temporal-name-
   buildNumber:
     Standalone: 0.1.0
     VisionOS: 0
