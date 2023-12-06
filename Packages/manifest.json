@@ -14,6 +14,7 @@
     "com.facticus.unity-atoms-extensions": "https://github.com/mnicolas94/facticus-unity-atoms-extensions.git",
     "com.facticus.utils": "https://github.com/mnicolas94/UnityUtils.git",
     "com.github.siccity.serializablecallback": "https://github.com/mnicolas94/SerializableCallback.git",
+    "com.mackysoft.choice": "1.2.3",
     "com.mackysoft.serializereference-extensions": "1.1.9",
     "com.unity-atoms.unity-atoms-base-atoms": "4.4.8",
     "com.unity-atoms.unity-atoms-core": "4.4.5",
@@ -69,8 +70,7 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0",
-    "com.mackysoft.choice": "1.2.3"
+    "com.unity.modules.xr": "1.0.0"
   },
   "scopedRegistries": [
     {
@@ -78,6 +78,8 @@
       "url": "https://package.openupm.com",
       "scopes": [
         "com.brunomikoski.animationsequencer",
+        "com.brunomikoski.scriptableobjectcollection",
+        "com.brunomikoski.uimanager",
         "com.dbrizov",
         "com.facticus.utils",
         "com.mackysoft.choice",
