@@ -492,6 +492,8 @@ MonoBehaviour:
       data:
         _scenes:
         - {fileID: 11400000, guid: b89d54fcf99901049b0e3d0b33dec7b4, type: 2}
+        - {fileID: 11400000, guid: d66b3fe2c47fd0d44a92e516bbb38371, type: 2}
+        - {fileID: 11400000, guid: 49e54c5ea3ad4a446b3e17de5a5a324f, type: 2}
     - rid: 1904655510605398026
       type: {class: WaitMinTimeLoader, ns: LoadingUtils.LoadersWithProgress, asm: com.facticus.loadingutils}
       data:
