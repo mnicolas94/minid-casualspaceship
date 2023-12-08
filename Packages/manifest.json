@@ -2,6 +2,7 @@
   "dependencies": {
     "com.brunomikoski.animationsequencer": "0.5.4",
     "com.codewriter.triinspector": "https://github.com/codewriter-packages/Tri-Inspector.git",
+    "com.facticus.animator-sequencer-extensions": "https://github.com/mnicolas94/facticus-animator-sequencer-extensions.git",
     "com.facticus.asyncutils": "https://github.com/mnicolas94/unity-async-utils.git",
     "com.facticus.audio": "https://github.com/mnicolas94/facticus-audio.git",
     "com.facticus.deploy": "https://github.com/mnicolas94/facticus-deploy.git",
