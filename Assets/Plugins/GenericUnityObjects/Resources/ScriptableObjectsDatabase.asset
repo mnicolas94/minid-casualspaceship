@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 402cb5eb17974d24bb00263b59dc709c, type: 3}
+  m_Name: ScriptableObjectsDatabase
+  m_EditorClassIdentifier: 
+  _keys:
+  - _typeNameAndAssembly: Utils.ScriptableObjectSingleton`1, com.facticus.utils
+  - _typeNameAndAssembly: UnityAtoms.AtomEvent`1, UnityAtoms.UnityAtomsCore.Runtime
+  - _typeNameAndAssembly: Spawning.TestGeneric`1, com.minidgames.casualspaceship
+  - _typeNameAndAssembly: UnityEditor.U2D.Common.Path.ScriptableData`1, Unity.2D.Common.Path.Editor
+  - _typeNameAndAssembly: UnityEditor.U2D.Common.Path.GenericScriptablePathInspector`2,
+      Unity.2D.Common.Path.Editor
+  - _typeNameAndAssembly: UnityEditor.U2D.Common.Path.GenericScriptablePath`1, Unity.2D.Common.Path.Editor
+  - _typeNameAndAssembly: BrunoMikoski.AnimationSequencer.EditorDefaultResourceSingleton`1,
+      BrunoMikoski.AnimationSequencer.Editor
+  - _typeNameAndAssembly: UnityEditor.ScriptableSingleton`1, UnityEditor.CoreModule
+  _values:
+  - _keys: []
+    _values: []
+  - _keys: []
+    _values: []
+  - _keys:
+    - _collection:
+      - _typeNameAndAssembly: Currency.CollectableCurrency, com.minidgames.casualspaceship
+    _values:
+    - _typeNameAndAssembly: GenericUnityObjects.ConcreteClasses.ConcreteClass_0d419ce72da1d3d46995d86af44e4f49,
+        z_TestGeneric_CollectableCurrency
+  - _keys: []
+    _values: []
+  - _keys: []
+    _values: []
+  - _keys: []
+    _values: []
+  - _keys: []
+    _values: []
+  - _keys: []
+    _values: []
