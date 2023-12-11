@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1152066441c4033b4243ae1225c2c8a, type: 3}
+  m_Name: UIState-Options
+  m_EditorClassIdentifier: 
+  _windowsManagerGetter:
+    _mode: 1
+    _value: {fileID: 0}
+    _callback:
+      _target: {fileID: 11400000, guid: 29ef2a9e0d1268f48a65cba1e49ebe7d, type: 2}
+      _methodName: get_Value
+      _args: []
+      _dynamic: 0
+      _typeName: SerializableCallback.SerializableCallback`1[[UI.WindowsManager,
+        com.minidgames.casualspaceship, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        Siccity.SerializableCallback, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      dirty: 0
+  _windowsPrefabs:
+  - {fileID: 8058957371162659516, guid: 220b664fcd096e44986a6ac5dd5f206a, type: 3}
