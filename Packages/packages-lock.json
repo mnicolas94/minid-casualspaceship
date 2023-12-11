@@ -23,7 +23,7 @@
       "dependencies": {
         "com.brunomikoski.animationsequencer": "0.5.4"
       },
-      "hash": "1b726d888b3aba8e6cbf5877091c0b843d42beb6"
+      "hash": "7512a1f1ce9d05025430e44e461992a7befa8ad5"
     },
     "com.facticus.asyncutils": {
       "version": "https://github.com/mnicolas94/unity-async-utils.git",

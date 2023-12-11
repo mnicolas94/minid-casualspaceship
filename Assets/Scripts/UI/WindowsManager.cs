@@ -8,8 +8,9 @@ namespace UI
 {
     public class WindowsManager : MonoBehaviour
     {
-        private PrefabsToInstanceMap _windowsInstances = new ();
-        private Dictionary<GameObject, IWindow> _objectToWindowMap = new ();
+        private readonly PrefabsToInstanceMap _windowsInstances = new ();
+        private readonly Dictionary<GameObject, IWindow> _objectToWindowMap = new ();
+        private readonly List<GameObject> _lockedTransitions = new ();
 
         private CancellationTokenSource _cts;
 
@@ -32,19 +33,25 @@ namespace UI
         private async Task OpenWindowTask(GameObject windowPrefab, CancellationToken ct)
         {
             var instance = _windowsInstances.GetOrCreateInstance<GameObject>(windowPrefab);
+            await WaitWindowToBeUnlocked(instance, ct);
             instance.SetActive(true);
             if (TryGetWindow(instance, out var window))
             {
+                _lockedTransitions.Add(instance);  // lock transitions tasks of this window
                 await window.Open(ct);
+                _lockedTransitions.Remove(instance);  // unlock transitions
             }
         }
 
         private async Task CloseWindowTask(GameObject windowPrefab, CancellationToken ct)
         {
             var instance = _windowsInstances.GetOrCreateInstance<GameObject>(windowPrefab);
+            await WaitWindowToBeUnlocked(instance, ct);
             if (TryGetWindow(instance, out var window))
             {
+                _lockedTransitions.Add(instance);  // lock transitions tasks of this window
                 await window.Close(ct);
+                _lockedTransitions.Remove(instance);  // unlock transitions
             }
 
             instance.SetActive(false);
@@ -101,6 +108,14 @@ namespace UI
             }
 
             return found;
+        }
+
+        private async Task WaitWindowToBeUnlocked(GameObject windowInstance, CancellationToken ct)
+        {
+            while (_lockedTransitions.Contains(windowInstance) && !ct.IsCancellationRequested)
+            {
+                await Task.Yield();
+            }
         }
     }
 }

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using SerializableCallback;
 using UnityEngine;
-using Utils.Attributes;
 
 namespace UI
 {

@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
+using AnimatorSequencerExtensions.Extensions;
 using BrunoMikoski.AnimationSequencer;
-using DG.Tweening;
 using UnityEngine;
 
 namespace UI
@@ -14,13 +14,13 @@ namespace UI
         public async Task Open(CancellationToken ct)
         {
             _openAnimation.Play();
-            await _openAnimation.PlayingSequence.AsyncWaitForCompletion();
+            await _openAnimation.PlayingSequence.AsyncWaitForCompletion(ct);
         }
 
         public async Task Close(CancellationToken ct)
         {
             _closeAnimation.Play();
-            await _closeAnimation.PlayingSequence.AsyncWaitForCompletion();
+            await _closeAnimation.PlayingSequence.AsyncWaitForCompletion(ct);
         }
     }
 }
