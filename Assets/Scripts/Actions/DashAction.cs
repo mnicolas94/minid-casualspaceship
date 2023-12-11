@@ -22,7 +22,7 @@ namespace Actions
         private bool _isCurrentlyDashing;
         private float _horizontalPositionBeforeDash;
 
-        private bool CanDash => Time.time >= _nextTimeAvailable && !_isCurrentlyDashing;
+        private bool CanDash => enabled && Time.time >= _nextTimeAvailable && !_isCurrentlyDashing;
 
         private CancellationTokenSource _cts;
 

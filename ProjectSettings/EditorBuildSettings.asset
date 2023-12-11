@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/DebugScene.unity
     guid: 33a7a657c6a54b24d8fb5f6d8f71c9d9
   - enabled: 1
-    path: Assets/Scenes/UIMainMenu.unity
+    path: Assets/Scenes/UIManager.unity
     guid: 543e98daed961714abac9d515e63d34f
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 8ba28de7a557812408be482935d42bbe, type: 2}
