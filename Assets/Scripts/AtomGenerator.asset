@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 734fbfb568154d32a89d792102f0c779, type: 3}
   m_Name: AtomGenerator
   m_EditorClassIdentifier: 
-  FullQualifiedName: 
-  GenerationOptions: 4194303
+  FullQualifiedName: UI.WindowsManager, com.minidgames.casualspaceship, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  GenerationOptions: 2556472
   Scripts:
   - {fileID: 0}
   - {fileID: 0}

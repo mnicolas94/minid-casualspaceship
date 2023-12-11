@@ -117,7 +117,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "5fc0a813fd9a21e068353397230dce3b314ece48"
+      "hash": "95e57cd1fdd33f6a5edf198c59c26bdfe4fa1431"
     },
     "com.github.siccity.serializablecallback": {
       "version": "https://github.com/mnicolas94/SerializableCallback.git",
@@ -139,6 +139,57 @@
       "source": "registry",
       "dependencies": {},
       "url": "https://package.openupm.com"
+    },
+    "com.solidalloy.extevents": {
+      "version": "https://github.com/mnicolas94/SolidAlloy-ExtEvents.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.solidalloy.util": "1.40.0",
+        "com.unity.settings-manager": "1.0.3",
+        "com.solidalloy.type-references": "2.16.0",
+        "com.solidalloy.unity-dropdown": "1.2.0"
+      },
+      "hash": "d0517c1fd02bbb8e8d16782a440de1e4c78dffb0"
+    },
+    "com.solidalloy.generic-unity-objects": {
+      "version": "https://github.com/mnicolas94/SolidAlloy-GenericUnityObjects.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.solidalloy.util": "1.40.0",
+        "com.solidalloy.type-references": "2.16.0",
+        "com.unity.settings-manager": "1.0.3",
+        "com.solidalloy.extevents": "1.7.0"
+      },
+      "hash": "adc7802151bbcc4a1cc68cfcab6b84c69002fc6e"
+    },
+    "com.solidalloy.type-references": {
+      "version": "https://github.com/mnicolas94/SolidAlloy-ClassTypeReference-for-Unity.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.solidalloy.util": "1.40.0",
+        "com.unity.settings-manager": "1.0.3",
+        "com.solidalloy.unity-dropdown": "1.2.0"
+      },
+      "hash": "d6eb0523c370efebba125dd0bd73d3d0459b6a18"
+    },
+    "com.solidalloy.unity-dropdown": {
+      "version": "https://github.com/mnicolas94/SolidAlloy-UnityDropdown.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.solidalloy.util": "1.40.0"
+      },
+      "hash": "ef2e8091b669f8aa530b0384db40da28b3121fd9"
+    },
+    "com.solidalloy.util": {
+      "version": "https://github.com/mnicolas94/SolidAlloy-SolidUtilities.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "f5c4dd7354236b21a566ee9642d7afabe6e729b2"
     },
     "com.unity-atoms.unity-atoms-base-atoms": {
       "version": "4.4.8",
@@ -346,6 +397,13 @@
     },
     "com.unity.scriptablebuildpipeline": {
       "version": "1.21.7",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.settings-manager": {
+      "version": "2.0.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
