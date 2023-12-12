@@ -12,8 +12,14 @@ namespace GameEvents
         [SerializeField] private VoidBaseEventReference _onResetEvent;
 
         [SerializeField] private GameObject _spawner;
+        
+        [Header("Score")]
         [SerializeField] private GameObject _scoreUpdater;
         [SerializeField] private FloatReference _score;
+        
+        [Header("Currencies")]
+        [SerializeField] private IntReference _currentSoftCurrency;
+        [SerializeField] private IntReference _currentHardCurrency;
 
         private CancellationTokenSource _cts;
 
@@ -67,6 +73,8 @@ namespace GameEvents
         {
             // reset score
             _score.Value = 0;
+            _currentSoftCurrency.Value = 0;
+            _currentHardCurrency.Value = 0;
         }
     }
 }
