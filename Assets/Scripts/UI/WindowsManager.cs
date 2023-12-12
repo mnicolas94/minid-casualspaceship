@@ -33,6 +33,8 @@ namespace UI
         private async Task OpenWindowTask(GameObject windowPrefab, CancellationToken ct)
         {
             var instance = _windowsInstances.GetOrCreateInstance<GameObject>(windowPrefab);
+            instance.transform.SetParent(transform);
+            
             await WaitWindowToBeUnlocked(instance, ct);
             instance.SetActive(true);
             if (TryGetWindow(instance, out var window))
