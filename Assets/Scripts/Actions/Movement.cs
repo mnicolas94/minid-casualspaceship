@@ -27,6 +27,11 @@ namespace Actions
             Move(-1);
         }
 
+        public void Stop()
+        {
+            Move(0);
+        }
+
         private void FixedUpdate()
         {
             // accelerate
