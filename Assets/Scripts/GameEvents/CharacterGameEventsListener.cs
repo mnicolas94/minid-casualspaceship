@@ -3,7 +3,7 @@ using System.Threading;
 using Actions;
 using AnimatorSequencerExtensions.Extensions;
 using BrunoMikoski.AnimationSequencer;
-using Input;
+using Character;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
@@ -16,14 +16,13 @@ namespace GameEvents
         [SerializeField] private VoidBaseEventReference _onContinueEvent;
         [SerializeField] private VoidBaseEventReference _onResetEvent;
 
+        [SerializeField] private CharacterReferences _character;
+        
         [Header("Actions")]
         [SerializeField] private Movement _movementAction;
-        [SerializeField] private DashAction _dashAction;
 
         [Header("Inputs")]
         [SerializeField] private GameObject _inputs;
-        [SerializeField] private MoveInput _moveInput;
-        [SerializeField] private DashInput _dashInput;
 
         [Header("Animations")]
         [SerializeField] private AnimationSequencerController _moveToInitialPositionAnimation;
@@ -34,7 +33,7 @@ namespace GameEvents
         private void OnEnable()
         {
             _cts = new CancellationTokenSource();
-            
+
             _onStartEvent.Event.Register(OnStart);
             _onEndEvent.Event.Register(OnEnd);
             _onContinueEvent.Event.Register(OnContinue);
@@ -65,7 +64,10 @@ namespace GameEvents
  
             // disable inputs
             _inputs.SetActive(false);
-
+            
+            // enable trail
+            _character.TrailParticleSystem.Play();
+            
             // await move to initial position
             _moveToInitialPositionAnimation.Play();
             await _moveToInitialPositionAnimation.PlayingSequence.AsyncWaitForCompletion(_cts.Token);
@@ -86,6 +88,9 @@ namespace GameEvents
             _movementAction.Stop();
             _movementAction.enabled = false;
             
+            // disable trail
+            _character.TrailParticleSystem.Stop();
+            
             // await death animation
             _deadAnimation.Play();
             await _deadAnimation.PlayingSequence.AsyncWaitForCompletion(_cts.Token);
@@ -99,6 +104,9 @@ namespace GameEvents
 
         private async void OnReset()
         {
+            // enable trail
+            _character.TrailParticleSystem.Play();
+            
             // await move to initial position
             _moveToInitialPositionAnimation.Play();
             await _moveToInitialPositionAnimation.PlayingSequence.AsyncWaitForCompletion(_cts.Token);

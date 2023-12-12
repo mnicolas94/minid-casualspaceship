@@ -5234,11 +5234,9 @@ MonoBehaviour:
     _list: {fileID: 0}
     _collectionInstancer: {fileID: 0}
     _listInstancer: {fileID: 0}
+  _character: {fileID: 1254335892}
   _movementAction: {fileID: 1254335884}
-  _dashAction: {fileID: 1254335890}
   _inputs: {fileID: 1992022605}
-  _moveInput: {fileID: 1992022607}
-  _dashInput: {fileID: 1992022608}
   _moveToInitialPositionAnimation: {fileID: 2022966420}
   _deadAnimation: {fileID: 1202908080}
 --- !u!1 &739310914
@@ -5639,6 +5637,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1254335886}
+  - component: {fileID: 1254335892}
   - component: {fileID: 1254335884}
   - component: {fileID: 1254335890}
   - component: {fileID: 1254335888}
@@ -5823,6 +5822,22 @@ MonoBehaviour:
   _onTriggerExit:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1254335892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254335883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c7336b4b7994c8bab9016d99cd85e14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _deadAnimation: {fileID: 1202908080}
+  _rebornAnimation: {fileID: 0}
+  _moveToInitialPositionAnimation: {fileID: 2022966420}
+  _trailParticleSystem: {fileID: 520374613}
 --- !u!1 &1507058413
 GameObject:
   m_ObjectHideFlags: 0
