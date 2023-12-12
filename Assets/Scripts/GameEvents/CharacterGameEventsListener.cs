@@ -6,7 +6,6 @@ using BrunoMikoski.AnimationSequencer;
 using Input;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
-using Void = UnityAtoms.Void;
 
 namespace GameEvents
 {

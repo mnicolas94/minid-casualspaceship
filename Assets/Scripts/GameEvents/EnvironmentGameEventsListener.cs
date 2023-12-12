@@ -21,10 +21,10 @@ namespace GameEvents
         {
             _cts = new CancellationTokenSource();
             
-            _onStartEvent.Event.Register(OnStart);
-            _onEndEvent.Event.Register(OnEnd);
-            _onContinueEvent.Event.Register(OnContinue);
-            _onResetEvent.Event.Register(OnReset);
+            _onStartEvent.Event.Register(StartGame);
+            _onEndEvent.Event.Register(EndGame);
+            _onContinueEvent.Event.Register(ContinueGame);
+            _onResetEvent.Event.Register(ResetGame);
         }
 
         private void OnDisable()
@@ -37,33 +37,33 @@ namespace GameEvents
             _cts.Dispose();
             _cts = null;
             
-            _onStartEvent.Event.Unregister(OnStart);
-            _onEndEvent.Event.Unregister(OnEnd);
-            _onContinueEvent.Event.Unregister(OnContinue);
-            _onResetEvent.Event.Unregister(OnReset);
+            _onStartEvent.Event.Unregister(StartGame);
+            _onEndEvent.Event.Unregister(EndGame);
+            _onContinueEvent.Event.Unregister(ContinueGame);
+            _onResetEvent.Event.Unregister(ResetGame);
         }
 
-        private void OnStart()
+        private void StartGame()
         {
-            // enable spawner and score updater
-            _spawner.SetActive(true);
-            _scoreUpdater.SetActive(true);
+            ResetGame();
+            ContinueGame();
         }
 
-        private void OnEnd()
+        private void EndGame()
         {
             // enable spawner and score updater
             _spawner.SetActive(false);
             _scoreUpdater.SetActive(false);
         }
         
-        private void OnContinue()
+        private void ContinueGame()
         {
-            // same as on start
-            OnStart();
+            // enable spawner and score updater
+            _spawner.SetActive(true);
+            _scoreUpdater.SetActive(true);
         }
 
-        private async void OnReset()
+        private void ResetGame()
         {
             // reset score
             _score.Value = 0;

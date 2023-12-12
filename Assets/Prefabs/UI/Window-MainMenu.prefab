@@ -2291,11 +2291,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2794235049015064104, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2794235049015064104, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2794235049015064104, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -2308,11 +2308,11 @@ PrefabInstance:
     - target: {fileID: 2794235049015064104, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 11400000, guid: a59e7f6db66364d4e8ecf29bdc6e8d14, type: 2}
+      objectReference: {fileID: 8868898002388838403}
     - target: {fileID: 2794235049015064104, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 8868898002388838403}
+      objectReference: {fileID: 11400000, guid: b32b32727f1d8cf45b529edc1bb823ce, type: 2}
     - target: {fileID: 2794235049015064104, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -2331,11 +2331,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2794235049015064104, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Open
+      value: DisableInteractions
       objectReference: {fileID: 0}
     - target: {fileID: 2794235049015064104, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: DisableInteractions
+      value: Raise
       objectReference: {fileID: 0}
     - target: {fileID: 2794235049015064104, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -2343,11 +2343,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2794235049015064104, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UI.UiState, com.minidgames.casualspaceship
+      value: UI.InteractionsDisabler, com.minidgames.casualspaceship
       objectReference: {fileID: 0}
     - target: {fileID: 2794235049015064104, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UI.InteractionsDisabler, com.minidgames.casualspaceship
+      value: UnityAtoms.BaseAtoms.VoidEvent, UnityAtoms.UnityAtomsBaseAtoms.Runtime
       objectReference: {fileID: 0}
     - target: {fileID: 2794235049015064104, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
