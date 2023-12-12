@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using MackySoft.Choice;
+using SerializableCallback;
 using TriInspector;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
@@ -113,7 +114,10 @@ namespace Spawning
 
         private void OnPoolRelease(Spawnable obj)
         {
-            
+            if (obj.gameObject.activeSelf)
+            {
+                obj.gameObject.SetActive(false);
+            }
         }
 
         private void StartCooldown()
