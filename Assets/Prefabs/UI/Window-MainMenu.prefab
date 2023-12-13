@@ -173,6 +173,7 @@ RectTransform:
   - {fileID: 6069977905467874678}
   - {fileID: 8007132874641776965}
   - {fileID: 2168451470154502655}
+  - {fileID: 1013062490144915863}
   m_Father: {fileID: 2627496417777627971}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -196,6 +197,7 @@ MonoBehaviour:
   - rid: 1904655598970208260
   - rid: 1904655598970208261
   - rid: 1904655667433308160
+  - rid: 1904655712459685890
   updateType: 0
   timeScaleIndependent: 0
   autoplayMode: 2
@@ -236,6 +238,12 @@ MonoBehaviour:
         delay: 0
         flowType: 1
         sequencer: {fileID: 4654260799601128862}
+    - rid: 1904655712459685890
+      type: {class: PlaySequenceAnimationStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+      data:
+        delay: 0
+        flowType: 1
+        sequencer: {fileID: 4095658541208469583}
 --- !u!1 &2180142158703696660
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,6 +283,147 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!1 &2308328862835960241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7771099210325068867}
+  - component: {fileID: 8067644093153454112}
+  m_Layer: 5
+  m_Name: Animation-OptionsButton Exit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7771099210325068867
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2308328862835960241}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6255998487409940608}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8067644093153454112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2308328862835960241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c10d422b52559da41aa9676770a8fc65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationSteps:
+  - rid: 1904655598970208259
+  - rid: 1904655598970208258
+  updateType: 0
+  timeScaleIndependent: 0
+  autoplayMode: 2
+  startPaused: 0
+  playbackSpeed: 1
+  playType: 0
+  loops: 0
+  loopType: 0
+  autoKill: 1
+  onStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onFinishedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onProgressEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  progress: -1
+  references:
+    version: 2
+    RefIds:
+    - rid: 1904655598970208258
+      type: {class: RectTransformInterpolationStep, ns: AnimatorSequencerExtensions.Steps, asm: com.facticus.animator-sequencer-extensions}
+      data:
+        delay: 0
+        flowType: 0
+        _targetRectTransform: {fileID: 5329701828728326387}
+        _duration: 0.4
+        _ease:
+          ease: 26
+          curve:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+        _direction: 0
+        _isRelative: 0
+        _useLocal: 1
+        _position: {x: 0, y: -630, z: 0}
+        _eulerAngles: {x: -0, y: 0, z: 0}
+        _scale: {x: 1, y: 1, z: 1}
+        _anchorMin: {x: 0.5, y: 0}
+        _anchorMax: {x: 0.5, y: 0}
+        _anchoredPosition: {x: 300, y: -16}
+        _sizeDelta: {x: 300, y: 80}
+        _pivot: {x: 0.5, y: 0}
+        _tweenPosition: 0
+        _tweenEulerAngles: 0
+        _tweenScale: 0
+        _tweenAnchorMin: 0
+        _tweenAnchorMax: 0
+        _tweenAnchoredPosition: 1
+        _tweenSizeDelta: 0
+        _tweenPivot: 0
+    - rid: 1904655598970208259
+      type: {class: RectTransformInterpolationStep, ns: AnimatorSequencerExtensions.Steps, asm: com.facticus.animator-sequencer-extensions}
+      data:
+        delay: 0
+        flowType: 0
+        _targetRectTransform: {fileID: 5329701828728326387}
+        _duration: 0
+        _ease:
+          ease: 27
+          curve:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+        _direction: 0
+        _isRelative: 0
+        _useLocal: 1
+        _position: {x: 0, y: -495, z: 0}
+        _eulerAngles: {x: -0, y: 0, z: 0}
+        _scale: {x: 1, y: 1, z: 1}
+        _anchorMin: {x: 0.5, y: 0}
+        _anchorMax: {x: 0.5, y: 0}
+        _anchoredPosition: {x: -16, y: -16}
+        _sizeDelta: {x: 300, y: 80}
+        _pivot: {x: 0.5, y: 0}
+        _tweenPosition: 0
+        _tweenEulerAngles: 0
+        _tweenScale: 0
+        _tweenAnchorMin: 0
+        _tweenAnchorMax: 0
+        _tweenAnchoredPosition: 1
+        _tweenSizeDelta: 0
+        _tweenPivot: 0
 --- !u!1 &2844928625980378863
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,6 +614,147 @@ MonoBehaviour:
         _anchorMin: {x: 0.5, y: 0}
         _anchorMax: {x: 0.5, y: 0}
         _anchoredPosition: {x: 0, y: 45}
+        _sizeDelta: {x: 300, y: 80}
+        _pivot: {x: 0.5, y: 0}
+        _tweenPosition: 0
+        _tweenEulerAngles: 0
+        _tweenScale: 0
+        _tweenAnchorMin: 0
+        _tweenAnchorMax: 0
+        _tweenAnchoredPosition: 1
+        _tweenSizeDelta: 0
+        _tweenPivot: 0
+--- !u!1 &4545363829272183393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1013062490144915863}
+  - component: {fileID: 4095658541208469583}
+  m_Layer: 5
+  m_Name: Animation-OptionsButton Enter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1013062490144915863
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545363829272183393}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8332672671777422348}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4095658541208469583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545363829272183393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c10d422b52559da41aa9676770a8fc65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationSteps:
+  - rid: 1904655598970208258
+  - rid: 1904655598970208259
+  updateType: 0
+  timeScaleIndependent: 0
+  autoplayMode: 2
+  startPaused: 0
+  playbackSpeed: 1
+  playType: 0
+  loops: 0
+  loopType: 0
+  autoKill: 1
+  onStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onFinishedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onProgressEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  progress: -1
+  references:
+    version: 2
+    RefIds:
+    - rid: 1904655598970208258
+      type: {class: RectTransformInterpolationStep, ns: AnimatorSequencerExtensions.Steps, asm: com.facticus.animator-sequencer-extensions}
+      data:
+        delay: 0
+        flowType: 0
+        _targetRectTransform: {fileID: 5329701828728326387}
+        _duration: 0
+        _ease:
+          ease: 22
+          curve:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+        _direction: 0
+        _isRelative: 0
+        _useLocal: 1
+        _position: {x: 0, y: -630, z: 0}
+        _eulerAngles: {x: -0, y: 0, z: 0}
+        _scale: {x: 1, y: 1, z: 1}
+        _anchorMin: {x: 0.5, y: 0}
+        _anchorMax: {x: 0.5, y: 0}
+        _anchoredPosition: {x: 300, y: -16}
+        _sizeDelta: {x: 300, y: 80}
+        _pivot: {x: 0.5, y: 0}
+        _tweenPosition: 0
+        _tweenEulerAngles: 0
+        _tweenScale: 0
+        _tweenAnchorMin: 0
+        _tweenAnchorMax: 0
+        _tweenAnchoredPosition: 1
+        _tweenSizeDelta: 0
+        _tweenPivot: 0
+    - rid: 1904655598970208259
+      type: {class: RectTransformInterpolationStep, ns: AnimatorSequencerExtensions.Steps, asm: com.facticus.animator-sequencer-extensions}
+      data:
+        delay: 0
+        flowType: 0
+        _targetRectTransform: {fileID: 5329701828728326387}
+        _duration: 0.4
+        _ease:
+          ease: 27
+          curve:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+        _direction: 0
+        _isRelative: 0
+        _useLocal: 1
+        _position: {x: 0, y: -495, z: 0}
+        _eulerAngles: {x: -0, y: 0, z: 0}
+        _scale: {x: 1, y: 1, z: 1}
+        _anchorMin: {x: 0.5, y: 0}
+        _anchorMax: {x: 0.5, y: 0}
+        _anchoredPosition: {x: -16, y: -16}
         _sizeDelta: {x: 300, y: 80}
         _pivot: {x: 0.5, y: 0}
         _tweenPosition: 0
@@ -826,6 +1116,7 @@ RectTransform:
   - {fileID: 3828369964636254352}
   - {fileID: 1958611766700061934}
   - {fileID: 8982158480981582921}
+  - {fileID: 7771099210325068867}
   m_Father: {fileID: 2627496417777627971}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -849,6 +1140,7 @@ MonoBehaviour:
   - rid: 1904655598970208260
   - rid: 1904655598970208261
   - rid: 1904655667433308160
+  - rid: 1904655712459685891
   updateType: 0
   timeScaleIndependent: 0
   autoplayMode: 2
@@ -889,6 +1181,12 @@ MonoBehaviour:
         delay: 0
         flowType: 1
         sequencer: {fileID: 7492375628795805199}
+    - rid: 1904655712459685891
+      type: {class: PlaySequenceAnimationStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+      data:
+        delay: 0
+        flowType: 1
+        sequencer: {fileID: 8067644093153454112}
 --- !u!1 &6487249284173672624
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,15 +2391,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2159756078501104204, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2159756078501104204, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2159756078501104204, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2159756078501104204, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_AnchoredPosition.x
