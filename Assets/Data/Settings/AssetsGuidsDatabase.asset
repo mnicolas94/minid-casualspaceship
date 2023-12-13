@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 443ad01b5b5251c489993d2ccba8be5c, type: 3}
   m_Name: AssetsGuidsDatabase
   m_EditorClassIdentifier: 
-  _assets: []
-  _guids: []
+  _assets:
+  - {fileID: 11400000, guid: 5fa167bd104300f4797eba203049b187, type: 2}
+  - {fileID: 11400000, guid: bbae57a5057d5a34c96e04c65528dd6c, type: 2}
+  - {fileID: 11400000, guid: 42be2050c7ef0dd4a924e5b556c3ae95, type: 2}
+  _guids:
+  - 5fa167bd104300f4797eba203049b187
+  - bbae57a5057d5a34c96e04c65528dd6c
+  - 42be2050c7ef0dd4a924e5b556c3ae95
