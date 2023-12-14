@@ -17,6 +17,8 @@ MonoBehaviour:
   _encryptData: 1
   _searchDatabaseAssetsInPaths:
   - Assets/Data/Persistence
+  - Assets/Data/Gameplay/Skins-Trails
+  - Assets/Data/Gameplay/Skins-Spaceships
   _ignoreDatabaseAssetsInPaths: []
   _populateDatabaseBeforeEnterPlayMode: 1
   _broadcaster:
