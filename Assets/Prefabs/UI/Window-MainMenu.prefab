@@ -2317,7 +2317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9122852375911741591, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_text
-      value: Chassis
+      value: Spaceships
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
