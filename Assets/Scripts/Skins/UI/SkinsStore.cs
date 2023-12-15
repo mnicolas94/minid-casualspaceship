@@ -1,11 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading;
+using System.Threading.Tasks;
 using ModelView;
 using TNRD;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 using Unlockables;
 
 namespace Skins.UI
@@ -54,6 +56,11 @@ namespace Skins.UI
                 var unlocked = await _storage.Value.IsUnlocked(skinData, ct);
                 AddSkinToList(skinData, unlocked);
             }
+
+            // make sure layouts get re-built after adding elements to them
+            await Task.Yield();
+            LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform)_unlockedList.transform);
+            LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform)_lockedList.transform);
             
             // register unlock callback
             _storage.Value.UnlockedEvent += OnSkinUnlocked;
