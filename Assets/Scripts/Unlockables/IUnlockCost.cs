@@ -1,10 +1,11 @@
-﻿using System.Threading.Tasks;
+﻿using System.Threading;
+using System.Threading.Tasks;
 
 namespace Unlockables
 {
     public interface IUnlockCost
     {
-        Task<bool> CanAfford();
-        Task<bool> PayCost();
+        Task<bool> CanAfford(CancellationToken ct);
+        Task<bool> PayCost(CancellationToken ct);
     }
 }

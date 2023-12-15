@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Skins
+  m_EditorClassIdentifier: 
+  m_GroupName: Skins
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 20353e5e81442f648a93aa1d2abd42f7
+  m_SerializeEntries:
+  - m_GUID: 901a9e47123305849bee9863846b57f3
+    m_Address: Assets/Data/Gameplay/Skins/Spaceships
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - skins-spaceship
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90ce38eece3115b479c956a7a227e658
+    m_Address: Assets/Data/Gameplay/Skins/Trails
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - skins-trail
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: ac99d85dcc3d171448d1a8d235d4102f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 97386d0f930999e4eb5f430303d2a8bc, type: 2}
+    - {fileID: 11400000, guid: 27a8f912ed076964ebaa1feb895c1faf, type: 2}

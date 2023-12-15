@@ -19,7 +19,7 @@ namespace Unlockables
             foreach (var storageInterface in _storages)
             {
                 var storage = storageInterface.Value;
-                storage.UnlockedEvent += UnlockedEvent;
+                storage.UnlockedEvent += NotifyUnlockedEvent;
             }
             
             await Task.WhenAll(tasks);
@@ -33,7 +33,7 @@ namespace Unlockables
             foreach (var storageInterface in _storages)
             {
                 var storage = storageInterface.Value;
-                storage.UnlockedEvent -= UnlockedEvent;
+                storage.UnlockedEvent -= NotifyUnlockedEvent;
             }
             
             await Task.WhenAll(tasks);
@@ -63,6 +63,7 @@ namespace Unlockables
             }
         }
 
+        private void NotifyUnlockedEvent(T t) => UnlockedEvent.Invoke(t);
         public Action<T> UnlockedEvent { get; set; }
     }
 }

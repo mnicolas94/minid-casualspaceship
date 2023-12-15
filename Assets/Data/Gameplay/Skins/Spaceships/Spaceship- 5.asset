@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 569d777efdf5446f8eeca14408c5079b, type: 3}
-  m_Name: Spaceship-Default
+  m_Name: Spaceship- 5
   m_EditorClassIdentifier: 
-  _previewSprite: {fileID: 0}
+  _previewSprite: {fileID: 21300000, guid: 05c7216c78d4dd34ebe2bac9c1e274d7, type: 3}
   _skinName:
     m_TableReference:
       m_TableCollectionName: 
@@ -24,12 +24,20 @@ MonoBehaviour:
     m_LocalVariables: []
   _prefab: {fileID: 0}
   _unlockCost:
-    mode: 0
+    mode: 1
     unityReference: {fileID: 0}
     rawReference:
-      rid: -2
+      rid: 1904655758322827267
   references:
     version: 2
     RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+    - rid: 1904655758322827267
+      type: {class: CurrencyCost, ns: Currency, asm: com.minidgames.casualspaceship}
+      data:
+        _cost:
+          _usage: 0
+          _value: 1000
+          _constant: {fileID: 0}
+          _variable: {fileID: 0}
+          _variableInstancer: {fileID: 0}
+        _currency: {fileID: 11400000, guid: 5db79252fe7e9c844ab14014509c5da9, type: 2}

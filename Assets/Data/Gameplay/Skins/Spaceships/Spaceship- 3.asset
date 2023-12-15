@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 569d777efdf5446f8eeca14408c5079b, type: 3}
+  m_Name: Spaceship- 3
+  m_EditorClassIdentifier: 
+  _previewSprite: {fileID: 21300000, guid: 66305a19e3614694f868c75a982e6b68, type: 3}
+  _skinName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _prefab: {fileID: 0}
+  _unlockCost:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 1904655758322827267
+  references:
+    version: 2
+    RefIds:
+    - rid: 1904655758322827267
+      type: {class: CurrencyCost, ns: Currency, asm: com.minidgames.casualspaceship}
+      data:
+        _cost:
+          _usage: 0
+          _value: 10
+          _constant: {fileID: 0}
+          _variable: {fileID: 0}
+          _variableInstancer: {fileID: 0}
+        _currency: {fileID: 11400000, guid: 5db79252fe7e9c844ab14014509c5da9, type: 2}

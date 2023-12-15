@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using SaveSystem;
 using UnityAtoms.BaseAtoms;
@@ -16,18 +17,18 @@ namespace Currency
         [SerializeField] private Currency _currency;
         public Currency Currency => _currency;
 
-        public async Task<bool> CanAfford()
+        public async Task<bool> CanAfford(CancellationToken ct)
         {
             return _currency.Variable.Value >= _cost.Value;
         }
 
-        public async Task<bool> PayCost()
+        public async Task<bool> PayCost(CancellationToken ct)
         {
-            var canAfford = await CanAfford();
+            var canAfford = await CanAfford(ct);
             if (canAfford)
             {
                 _currency.Variable.Value -= _cost;
-                await _currency.Save();
+                await _currency.Variable.Save();
             }
 
             return canAfford;
