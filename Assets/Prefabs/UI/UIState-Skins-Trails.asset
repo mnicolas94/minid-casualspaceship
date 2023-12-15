@@ -25,4 +25,4 @@ MonoBehaviour:
         Siccity.SerializableCallback, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       dirty: 0
   _windowsPrefabs:
-  - {fileID: 567648970530652634, guid: 029e17a42a0c78d41a14c6e4c946cb88, type: 3}
+  - {fileID: 2260288647378291376, guid: 1b5eaa01dd60f0243a7caec5fed574bb, type: 3}
