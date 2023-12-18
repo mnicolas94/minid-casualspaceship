@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Jnk.TinyContainer;
 using ModelView;
 using TNRD;
 using UnityAtoms.BaseAtoms;
@@ -107,9 +108,11 @@ namespace Skins.UI
             // TODO keep order
         }
 
-        private async void EquipSkin(SkinData skin)
+        private void EquipSkin(SkinData skin)
         {
             Debug.Log($"Equip skin: {skin}");
+            TinyContainer.Global.Get<SkinEquipper>(out var equipper);
+            equipper.EquipSkin(skin);
         }
             
         private async void UnlockSkin(SkinData skin)

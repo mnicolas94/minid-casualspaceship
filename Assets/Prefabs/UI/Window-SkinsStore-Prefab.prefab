@@ -1266,8 +1266,8 @@ MonoBehaviour:
     unityReference: {fileID: 11400000, guid: 093435a28c36f7c4aa9100d02e7b784e, type: 2}
     rawReference:
       rid: -2
-  _equipEvent: {fileID: 11400000, guid: b2387aa482c4130408bbd384580ec441, type: 2}
-  _costPaidEvent: {fileID: 11400000, guid: f5b31ec064eed7c41a5886786ca05f86, type: 2}
+  _equipEvent: {fileID: 11400000, guid: e8a4fe0130991de4f90c1a54c305f725, type: 2}
+  _costPaidEvent: {fileID: 11400000, guid: 2cfa4eb7d1c87de48bef8e23145e3563, type: 2}
   _unlockedList: {fileID: 636807605910268852}
   _lockedList: {fileID: 1951376353493502435}
   references:

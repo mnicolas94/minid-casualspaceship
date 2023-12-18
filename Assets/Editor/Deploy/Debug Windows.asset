@@ -12,14 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d6228cd6dd744bb8b6bc1150736cb0a, type: 3}
   m_Name: Debug Windows
   m_EditorClassIdentifier: 
-  _repositoryBranch: dev
-  _elements:
-  - _developmentBuild: 1
+  _repositoryBranchOrTag: main
+  _overrideVariables: []
+  _platforms:
+  - _enabled: 1
+    _developmentBuild: 1
+    _freeDiskSpaceBeforeBuild: 0
     _buildPlatform:
       rid: 3334506971384512513
     _deployPlatform:
       rid: 3334506971384512516
-  - _developmentBuild: 0
+  - _enabled: 1
+    _developmentBuild: 0
+    _freeDiskSpaceBeforeBuild: 0
     _buildPlatform:
       rid: 3334506971384512514
     _deployPlatform:

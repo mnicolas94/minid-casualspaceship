@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a70122024a70f8e4ba8b9d586a7888cd, type: 3}
+  m_Script: {fileID: 11500000, guid: 223ab6c67081132498ac84788ee24c0c, type: 3}
   m_Name: SkinEvent-Equip
   m_EditorClassIdentifier: 
   _developerDescription: 

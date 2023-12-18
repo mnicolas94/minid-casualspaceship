@@ -74,7 +74,8 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0"
+    "com.unity.modules.xr": "1.0.0",
+    "com.jnk.tinycontainer": "1.5.0"
   },
   "scopedRegistries": [
     {
@@ -86,6 +87,7 @@
         "com.brunomikoski.uimanager",
         "com.dbrizov",
         "com.facticus.utils",
+        "com.jnk.tinycontainer",
         "com.mackysoft.choice",
         "com.mackysoft.serializereference-extensions",
         "com.needle",

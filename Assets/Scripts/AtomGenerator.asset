@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 734fbfb568154d32a89d792102f0c779, type: 3}
   m_Name: AtomGenerator
   m_EditorClassIdentifier: 
-  FullQualifiedName: Skins.SkinData, com.facticus.skins, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
+  FullQualifiedName: Skins.SkinData, com.minidgames.casualspaceship, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
   GenerationOptions: 3081784
   Scripts:
   - {fileID: 0}
