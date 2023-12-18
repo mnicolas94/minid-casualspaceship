@@ -7,7 +7,6 @@ using TNRD;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Unlockables;
 
@@ -18,6 +17,7 @@ namespace Skins.UI
         [SerializeField] private AssetLabelReference _skinsReference;
         
         [SerializeField] private SerializableInterface<IUnlockablesStorage<SkinData>> _storage;
+        [SerializeField] private PersistedEquippedSkin _equippedSkins;
         [SerializeField] private SkinDataEvent _equipEvent;
         [SerializeField] private SkinDataEvent _costPaidEvent;
         
@@ -98,6 +98,7 @@ namespace Skins.UI
             {
                 var view = (SkinView) listToAdd.Add(skinData);
                 view.Unlocked = unlocked;
+                view.Equipped = IsSkinEquipped(skinData);
             }
 
             if (listToRemove.IsModelInList(skinData))
@@ -110,14 +111,23 @@ namespace Skins.UI
 
         private void EquipSkin(SkinData skin)
         {
-            Debug.Log($"Equip skin: {skin}");
             TinyContainer.Global.Get<SkinEquipper>(out var equipper);
             equipper.EquipSkin(skin);
+            
+            // update equipped hint
+            _unlockedList.GetViews<SkinView>().ForEach(v => v.Equipped = v.Model == skin);
+        }
+
+        private bool IsSkinEquipped(SkinData skin)
+        {
+            var equippedSkin = skin.SkinType == SkinType.Spaceship
+                ? _equippedSkins.SpaceshipSkin
+                : _equippedSkins.TrailSkin;
+            return skin == equippedSkin;
         }
             
         private async void UnlockSkin(SkinData skin)
         {
-            Debug.Log($"Unlock skin: {skin}");
             await _storage.Value.Unlock(skin, _cts.Token);
         }
 

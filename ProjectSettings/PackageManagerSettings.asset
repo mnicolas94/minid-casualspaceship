@@ -33,6 +33,7 @@ MonoBehaviour:
     - com.brunomikoski.animationsequencer
     - com.brunomikoski.scriptableobjectcollection
     - com.brunomikoski.uimanager
+    - com.coffee.softmask-for-ugui
     - com.dbrizov
     - com.facticus.utils
     - com.jnk.tinycontainer

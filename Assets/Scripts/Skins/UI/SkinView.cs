@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Threading;
+using System.Threading.Tasks;
 using ModelView;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.Localization.Components;
 using UnityEngine.UI;
 
@@ -19,6 +21,9 @@ namespace Skins.UI
         [SerializeField] private Button _equipButton;
         [SerializeField] private Button _payCostButton;
         [SerializeField] private MultiViewDelegate _costView;
+        [SerializeField] private LocalizeStringEvent _equippedText;
+        [SerializeField] private LocalizedString _equippedString;
+        [SerializeField] private LocalizedString _nonEquippedString;
 
         private CancellationTokenSource _cts;
 
@@ -30,7 +35,20 @@ namespace Skins.UI
                 if (_unlocked != value)
                 {
                     _unlocked = value;
-                    Initialize(_model);
+                    UpdateUnlockedState();
+                }
+            }
+        }
+        
+        private bool _equipped;
+        public bool Equipped
+        {
+            set
+            {
+                if (_equipped != value)
+                {
+                    _equipped = value;
+                    UpdateEquippedState();
                 }
             }
         }
@@ -64,10 +82,6 @@ namespace Skins.UI
 
         public override void Initialize(SkinData model)
         {
-            _equipButton.gameObject.SetActive(false);
-            _payCostButton.gameObject.SetActive(false);
-            _costView.gameObject.SetActive(false);
- 
             UpdateView(model);
         }
 
@@ -76,25 +90,30 @@ namespace Skins.UI
             // _nameText.StringReference = model.SkinName;
             _skinImage.sprite = model.PreviewSprite;
 
-            if (_unlocked)
+            UpdateUnlockedState();
+            UpdateEquippedState();
+        }
+
+        private void UpdateUnlockedState()
+        {
+            _equipButton.gameObject.SetActive(_unlocked);
+            _payCostButton.gameObject.SetActive(!_unlocked);
+            _costView.gameObject.SetActive(!_unlocked);
+            if (!_unlocked)
             {
-                _equipButton.gameObject.SetActive(true);
+                _costView.Initialize(_model.UnlockCost);
             }
-            else
-            {
-                _payCostButton.gameObject.SetActive(true);
-                _costView.gameObject.SetActive(true);
-                _costView.Initialize(model.UnlockCost);
-            }
+        }
+
+        private void UpdateEquippedState()
+        {
+            _equipButton.interactable = !_equipped;
+            _equippedText.StringReference = _equipped ? _equippedString : _nonEquippedString;
         }
         
         private void OnEquipButtonClick()
         {
-            _equipButton.interactable = false;
-            
             _equipEvent.Raise(_model);
-            
-            _equipButton.interactable = true;
         }
 
         private async void OnPayCostButtonClick()

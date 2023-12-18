@@ -16,6 +16,13 @@
       },
       "hash": "86fed7a83099b9d8f5b9f82b5c146873023a6e5c"
     },
+    "com.coffee.softmask-for-ugui": {
+      "version": "1.0.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.facticus.animator-sequencer-extensions": {
       "version": "https://github.com/mnicolas94/facticus-animator-sequencer-extensions.git",
       "depth": 0,
@@ -82,7 +89,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "50cdd7c663fd0ce39e234fb3aeb795c50567082a"
+      "hash": "1c286b1ac1bd44486c7502893447f6863e1c5a9e"
     },
     "com.facticus.savesystem": {
       "version": "https://github.com/mnicolas94/unity-save-system.git",

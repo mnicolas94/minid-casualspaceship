@@ -216,6 +216,28 @@ MonoBehaviour:
   _equipButton: {fileID: 8356069130196963855}
   _payCostButton: {fileID: 9024769632371522351}
   _costView: {fileID: 8880666361300550574}
+  _equippedText: {fileID: 2122129063125310429}
+  _equippedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:5bb917ae05df4434488195228cc605b8
+    m_TableEntryReference:
+      m_KeyId: 30009188352
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _nonEquippedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:5bb917ae05df4434488195228cc605b8
+    m_TableEntryReference:
+      m_KeyId: 154332553216
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!222 &937450101606642115
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -337,13 +359,72 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2074125276077819330, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2122129063125310429}
   m_SourcePrefab: {fileID: 100100000, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
+--- !u!114 &3146684113944992944 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9122852375911741591, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
+  m_PrefabInstance: {fileID: 6138869603188761639}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5330397814298337765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &5244824210899922539 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2159756078501104204, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
   m_PrefabInstance: {fileID: 6138869603188761639}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5330397814298337765 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2074125276077819330, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
+  m_PrefabInstance: {fileID: 6138869603188761639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2122129063125310429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5330397814298337765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3146684113944992944}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &8356069130196963855 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2794235049015064104, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
@@ -366,6 +447,10 @@ PrefabInstance:
     - target: {fileID: 418777716076617813, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_Name
       value: UnlockButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 418777716076617813, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2159756078501104204, guid: d293ff75cb827424ba73d080c6f05b75, type: 3}
       propertyPath: m_Pivot.x
