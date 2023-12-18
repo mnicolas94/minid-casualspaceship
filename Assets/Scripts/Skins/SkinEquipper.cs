@@ -64,7 +64,12 @@ namespace Skins
                 
                 // set parent
                 var parent = isSpaceship ? _character.SpaceshipParent : _character.TrailParent;
-                instance.transform.SetParent(parent);
+                instance.transform.SetParent(parent, false);
+
+                if (!isSpaceship)
+                {
+                    _character.TrailParticleSystem = instance.GetComponent<ParticleSystem>();
+                }
             }
             
             // persist
