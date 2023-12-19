@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: _DefaultSkins-Spaceship
   m_EditorClassIdentifier: 
   _list:
-  - {fileID: 11400000, guid: 67fd70e86b22ebc44822c3be5593d46f, type: 2}
+  - m_AssetGUID: 67fd70e86b22ebc44822c3be5593d46f
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0

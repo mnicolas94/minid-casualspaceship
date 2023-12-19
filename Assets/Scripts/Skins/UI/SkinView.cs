@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading;
-using System.Threading.Tasks;
+using DefaultNamespace.AddressablesExtensions;
 using ModelView;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
@@ -10,7 +10,7 @@ using UnityEngine.UI;
 
 namespace Skins.UI
 {
-    public class SkinView : ViewBaseBehaviour<SkinData>
+    public class SkinView : ViewBaseBehaviour<AddressableSkinData>
     {
         [SerializeField] private SkinDataEvent _equipEvent;
         [SerializeField] private SkinDataEvent _costPaidEvent;
@@ -25,6 +25,8 @@ namespace Skins.UI
         [SerializeField] private LocalizedString _equippedString;
         [SerializeField] private LocalizedString _nonEquippedString;
 
+        private SkinData _skinData;
+        
         private CancellationTokenSource _cts;
 
         private bool _unlocked;
@@ -75,20 +77,22 @@ namespace Skins.UI
             _cts = null;
         }
         
-        public override bool CanRenderModel(SkinData model)
+        public override bool CanRenderModel(AddressableSkinData model)
         {
             return true;
         }
 
-        public override void Initialize(SkinData model)
+        public override void Initialize(AddressableSkinData model)
         {
             UpdateView(model);
         }
 
-        public override void UpdateView(SkinData model)
+        public override async void UpdateView(AddressableSkinData model)
         {
+            _skinData = await model.GetOrLoadAssetAsync();
+            
             // _nameText.StringReference = model.SkinName;
-            _skinImage.sprite = model.PreviewSprite;
+            _skinImage.sprite = _skinData.PreviewSprite;
 
             UpdateUnlockedState();
             UpdateEquippedState();
@@ -96,17 +100,27 @@ namespace Skins.UI
 
         private void UpdateUnlockedState()
         {
+            if (_skinData == null)
+            {
+                return;
+            }
+            
             _equipButton.gameObject.SetActive(_unlocked);
             _payCostButton.gameObject.SetActive(!_unlocked);
             _costView.gameObject.SetActive(!_unlocked);
             if (!_unlocked)
             {
-                _costView.Initialize(_model.UnlockCost);
+                _costView.Initialize(_skinData.UnlockCost);
             }
         }
 
         private void UpdateEquippedState()
         {
+            if (_skinData == null)
+            {
+                return;
+            }
+            
             _equipButton.interactable = !_equipped;
             _equippedText.StringReference = _equipped ? _equippedString : _nonEquippedString;
         }
@@ -121,7 +135,7 @@ namespace Skins.UI
             _payCostButton.interactable = false;
 
             var ct = _cts.Token;
-            var paid = await _model.UnlockCost.PayCost(ct);
+            var paid = await _skinData.UnlockCost.PayCost(ct);
             if (paid)
             {
                 _costPaidEvent.Raise(_model);

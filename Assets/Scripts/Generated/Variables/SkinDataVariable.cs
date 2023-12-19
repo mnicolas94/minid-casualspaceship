@@ -9,9 +9,9 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [EditorIcon("atom-icon-lush")]
     [CreateAssetMenu(menuName = "Unity Atoms/Variables/SkinData", fileName = "SkinDataVariable")]
-    public sealed class SkinDataVariable : AtomVariable<Skins.SkinData, SkinDataPair, SkinDataEvent, SkinDataPairEvent, SkinDataSkinDataFunction>
+    public sealed class SkinDataVariable : AtomVariable<AddressableSkinData, SkinDataPair, SkinDataEvent, SkinDataPairEvent, SkinDataSkinDataFunction>
     {
-        protected override bool ValueEquals(Skins.SkinData other)
+        protected override bool ValueEquals(AddressableSkinData other)
         {
             throw new NotImplementedException();
         }

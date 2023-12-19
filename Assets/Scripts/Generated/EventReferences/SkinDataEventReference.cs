@@ -8,7 +8,7 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [Serializable]
     public sealed class SkinDataEventReference : AtomEventReference<
-        Skins.SkinData,
+        AddressableSkinData,
         SkinDataVariable,
         SkinDataEvent,
         SkinDataVariableInstancer,

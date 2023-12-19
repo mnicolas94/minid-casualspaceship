@@ -8,5 +8,5 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [EditorIcon("atom-icon-sign-blue")]
     [AddComponentMenu("Unity Atoms/Event Instancers/SkinData Event Instancer")]
-    public class SkinDataEventInstancer : AtomEventInstancer<Skins.SkinData, SkinDataEvent> { }
+    public class SkinDataEventInstancer : AtomEventInstancer<AddressableSkinData, SkinDataEvent> { }
 }

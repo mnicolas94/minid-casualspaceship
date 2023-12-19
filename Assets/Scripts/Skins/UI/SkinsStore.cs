@@ -1,10 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Jnk.TinyContainer;
 using ModelView;
 using TNRD;
 using UnityAtoms.BaseAtoms;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.UI;
@@ -16,8 +19,7 @@ namespace Skins.UI
     {
         [SerializeField] private AssetLabelReference _skinsReference;
         
-        [SerializeField] private SerializableInterface<IUnlockablesStorage<SkinData>> _storage;
-        [SerializeField] private PersistedEquippedSkin _equippedSkins;
+        [SerializeField] private SerializableInterface<IUnlockablesStorage<AddressableSkinData>> _storage;
         [SerializeField] private SkinDataEvent _equipEvent;
         [SerializeField] private SkinDataEvent _costPaidEvent;
         
@@ -51,7 +53,7 @@ namespace Skins.UI
             _lockedList.Clear();
             
             // load skins
-            var skins = await Addressables.LoadAssetsAsync<SkinData>(_skinsReference, null).Task;
+            var skins = await LoadAddressableSkinsAsync();
             foreach (var skinData in skins)
             {
                 var unlocked = await _storage.Value.IsUnlocked(skinData, ct);
@@ -65,6 +67,28 @@ namespace Skins.UI
             
             // register unlock callback
             _storage.Value.UnlockedEvent += OnSkinUnlocked;
+        }
+
+        private async Task<IEnumerable<AddressableSkinData>> LoadAddressableSkinsAsync()
+        {
+            var resourceLocations = await Addressables.LoadResourceLocationsAsync(_skinsReference, typeof(SkinData)).Task;
+            var skins = resourceLocations
+                .Where(loc =>
+                {
+                    Debug.Log($"where: {loc.ResourceType}");
+                    return loc.ResourceType == typeof(SkinData);
+                })
+                .Select(loc =>
+                {
+#if UNITY_EDITOR
+                    var guid = AssetDatabase.AssetPathToGUID(loc.PrimaryKey);
+#else
+                    var guid = loc.PrimaryKey;
+#endif
+                    Debug.Log(guid);
+                    return new AddressableSkinData(guid);
+                });
+            return skins;
         }
 
         private async void OnDestroy()
@@ -89,7 +113,7 @@ namespace Skins.UI
             }
         }
         
-        private void AddSkinToList(SkinData skinData, bool unlocked)
+        private async void AddSkinToList(AddressableSkinData skinData, bool unlocked)
         {
             var listToAdd = unlocked ? _unlockedList : _lockedList;
             var listToRemove = unlocked ? _lockedList : _unlockedList;
@@ -98,7 +122,8 @@ namespace Skins.UI
             {
                 var view = (SkinView) listToAdd.Add(skinData);
                 view.Unlocked = unlocked;
-                view.Equipped = IsSkinEquipped(skinData);
+                TinyContainer.Global.Get<SkinEquipper>(out var equipper);
+                view.Equipped = await equipper.IsEquipped(skinData);
             }
 
             if (listToRemove.IsModelInList(skinData))
@@ -109,7 +134,7 @@ namespace Skins.UI
             // TODO keep order
         }
 
-        private void EquipSkin(SkinData skin)
+        private void EquipSkin(AddressableSkinData skin)
         {
             TinyContainer.Global.Get<SkinEquipper>(out var equipper);
             equipper.EquipSkin(skin);
@@ -117,21 +142,13 @@ namespace Skins.UI
             // update equipped hint
             _unlockedList.GetViews<SkinView>().ForEach(v => v.Equipped = v.Model == skin);
         }
-
-        private bool IsSkinEquipped(SkinData skin)
-        {
-            var equippedSkin = skin.SkinType == SkinType.Spaceship
-                ? _equippedSkins.SpaceshipSkin
-                : _equippedSkins.TrailSkin;
-            return skin == equippedSkin;
-        }
             
-        private async void UnlockSkin(SkinData skin)
+        private async void UnlockSkin(AddressableSkinData skin)
         {
             await _storage.Value.Unlock(skin, _cts.Token);
         }
 
-        private void OnSkinUnlocked(SkinData skinData)
+        private void OnSkinUnlocked(AddressableSkinData skinData)
         {
             AddSkinToList(skinData, true);
         }

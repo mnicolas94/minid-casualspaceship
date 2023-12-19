@@ -8,7 +8,7 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [EditorIcon("atom-icon-cherry")]
     [CreateAssetMenu(menuName = "Unity Atoms/Events/SkinData", fileName = "SkinDataEvent")]
-    public sealed class SkinDataEvent : AtomEvent<Skins.SkinData>
+    public sealed class SkinDataEvent : AtomEvent<AddressableSkinData>
     {
     }
 }

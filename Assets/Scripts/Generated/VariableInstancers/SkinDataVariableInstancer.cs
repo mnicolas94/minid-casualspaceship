@@ -12,7 +12,7 @@ namespace UnityAtoms.BaseAtoms
     public class SkinDataVariableInstancer : AtomVariableInstancer<
         SkinDataVariable,
         SkinDataPair,
-        Skins.SkinData,
+        AddressableSkinData,
         SkinDataEvent,
         SkinDataPairEvent,
         SkinDataSkinDataFunction>

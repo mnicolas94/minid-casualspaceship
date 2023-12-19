@@ -10,8 +10,7 @@ namespace Skins
         Spaceship,
         Trail,
     }
-    
-    
+
     [CreateAssetMenu(fileName = "SkinData", menuName = "Skins/SkinData", order = 0)]
     public class SkinData : ScriptableObject
     {

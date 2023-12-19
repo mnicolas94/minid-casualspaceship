@@ -8,5 +8,5 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [EditorIcon("atom-icon-teal")]
     [CreateAssetMenu(menuName = "Unity Atoms/Constants/SkinData", fileName = "SkinDataConstant")]
-    public sealed class SkinDataConstant : AtomBaseVariable<Skins.SkinData> { }
+    public sealed class SkinDataConstant : AtomBaseVariable<AddressableSkinData> { }
 }

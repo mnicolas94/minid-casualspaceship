@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Threading;
+using System.Threading.Tasks;
 using Character;
+using DefaultNamespace.AddressablesExtensions;
 using SaveSystem;
 using UnityEngine;
 using Utils;
@@ -40,8 +42,24 @@ namespace Skins
             EquipSkin(_persistence.TrailSkin);
         }
 
-        public async void EquipSkin(SkinData skin)
+        public async Task<bool> IsEquipped(AddressableSkinData skin)
         {
+            var skinData = await skin.GetOrLoadAssetAsync();
+            var equippedSkin = skinData.SkinType == SkinType.Spaceship
+                ? _persistence.SpaceshipSkin
+                : _persistence.TrailSkin;
+            return skin.Equals(equippedSkin);
+        }
+
+        public async void EquipSkin(AddressableSkinData addressableSkin)
+        {
+            if (addressableSkin == null)
+            {
+                return;
+            }
+            
+            var skin = await addressableSkin.GetOrLoadAssetAsync();
+            
             if (skin == null)
             {
                 return;
@@ -75,11 +93,11 @@ namespace Skins
             // persist
             if (isSpaceship)
             {
-                _persistence.SpaceshipSkin = skin;
+                _persistence.SpaceshipSkin = addressableSkin;
             }
             else
             {
-                _persistence.TrailSkin = skin;
+                _persistence.TrailSkin = addressableSkin;
             }
 
             await _persistence.Save();

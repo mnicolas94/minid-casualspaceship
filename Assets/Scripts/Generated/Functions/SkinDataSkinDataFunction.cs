@@ -5,5 +5,5 @@ namespace UnityAtoms.BaseAtoms
     /// Function x 2 of type `Skins.SkinData`. Inherits from `AtomFunction&lt;Skins.SkinData, Skins.SkinData&gt;`.
     /// </summary>
     [EditorIcon("atom-icon-sand")]
-    public abstract class SkinDataSkinDataFunction : AtomFunction<Skins.SkinData, Skins.SkinData> { }
+    public abstract class SkinDataSkinDataFunction : AtomFunction<AddressableSkinData, AddressableSkinData> { }
 }
