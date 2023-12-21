@@ -73,11 +73,6 @@ namespace Skins.UI
         {
             var resourceLocations = await Addressables.LoadResourceLocationsAsync(_skinsReference, typeof(SkinData)).Task;
             var skins = resourceLocations
-                .Where(loc =>
-                {
-                    Debug.Log($"where: {loc.ResourceType}");
-                    return loc.ResourceType == typeof(SkinData);
-                })
                 .Select(loc =>
                 {
 #if UNITY_EDITOR
