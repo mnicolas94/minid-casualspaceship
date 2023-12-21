@@ -32,12 +32,15 @@ namespace Skins.UI
         {
             _equipEvent.Register(EquipSkin);
             _costPaidEvent.Register(UnlockSkin);
+            _storage.Value.UnlockedEvent += OnSkinUnlocked;
         }
 
         private void OnDisable()
         {
             _equipEvent.Unregister(EquipSkin);
             _costPaidEvent.Unregister(UnlockSkin);
+            _storage.Value.UnlockedEvent -= OnSkinUnlocked;
+            
         }
 
         private async void Start()
@@ -64,9 +67,6 @@ namespace Skins.UI
             await Task.Yield();
             LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform)_unlockedList.transform);
             LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform)_lockedList.transform);
-            
-            // register unlock callback
-            _storage.Value.UnlockedEvent += OnSkinUnlocked;
         }
 
         private async Task<IEnumerable<AddressableSkinData>> LoadAddressableSkinsAsync()

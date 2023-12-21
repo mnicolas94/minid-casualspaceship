@@ -15,13 +15,6 @@ MonoBehaviour:
   _repositoryBranchOrTag: main
   _overrideVariables: []
   _platforms:
-  - _enabled: 0
-    _developmentBuild: 1
-    _freeDiskSpaceBeforeBuild: 0
-    _buildPlatform:
-      rid: 3334506971384512518
-    _deployPlatform:
-      rid: 3334506971384512516
   - _enabled: 1
     _developmentBuild: 0
     _freeDiskSpaceBeforeBuild: 1
@@ -29,22 +22,27 @@ MonoBehaviour:
       rid: 3334506971384512517
     _deployPlatform:
       rid: 3334506971384512515
+  - _enabled: 1
+    _developmentBuild: 0
+    _freeDiskSpaceBeforeBuild: 0
+    _buildPlatform:
+      rid: 1904655895536861197
+    _deployPlatform:
+      rid: 1904655895536861196
   references:
     version: 2
     RefIds:
+    - rid: 1904655895536861196
+      type: {class: Telegram, ns: Deploy.Editor.DeployPlatforms, asm: com.facticus.deploy.editor}
+      data:
+        message: Windows build
+    - rid: 1904655895536861197
+      type: {class: Windows, ns: Deploy.Editor.BuildPlatforms, asm: com.facticus.deploy.editor}
     - rid: 3334506971384512515
       type: {class: Telegram, ns: Deploy.Editor.DeployPlatforms, asm: com.facticus.deploy.editor}
       data:
         message: Android build
-    - rid: 3334506971384512516
-      type: {class: Telegram, ns: Deploy.Editor.DeployPlatforms, asm: com.facticus.deploy.editor}
-      data:
-        message: '[Dev] Android build'
     - rid: 3334506971384512517
-      type: {class: Android, ns: Deploy.Editor.BuildPlatforms, asm: com.facticus.deploy.editor}
-      data:
-        appBundle: 0
-    - rid: 3334506971384512518
       type: {class: Android, ns: Deploy.Editor.BuildPlatforms, asm: com.facticus.deploy.editor}
       data:
         appBundle: 0
