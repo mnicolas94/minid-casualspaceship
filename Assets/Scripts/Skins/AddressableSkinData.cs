@@ -22,7 +22,12 @@ namespace Skins
 
         public bool Equals(AddressableSkinData other)
         {
-            return RuntimeKey.Equals(other.RuntimeKey);
+            if (other != null)
+            {
+                return RuntimeKey.Equals(other.RuntimeKey);
+            }
+            
+            return false;
         }
     }
 }

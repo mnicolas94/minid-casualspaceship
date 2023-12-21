@@ -57,8 +57,8 @@ PlayerSettings:
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
   iosUseCustomAppBackgroundBehavior: 0
-  allowedAutorotateToPortrait: 1
-  allowedAutorotateToPortraitUpsideDown: 1
+  allowedAutorotateToPortrait: 0
+  allowedAutorotateToPortraitUpsideDown: 0
   allowedAutorotateToLandscapeRight: 1
   allowedAutorotateToLandscapeLeft: 1
   useOSAutorotation: 1
@@ -140,6 +140,8 @@ PlayerSettings:
   - {fileID: 11400000, guid: 04c99e54b1a99514db8e8375dafa241e, type: 2}
   - {fileID: 11400000, guid: 6d65d40fd989d5649a40a6bea17942ea, type: 2}
   - {fileID: 11400000, guid: 7e6b7d69de8eede48888eb48d0230349, type: 2}
+  - {fileID: 11400000, guid: 9ca2b2f908f07bd4098f2532f8b97ee9, type: 2}
+  - {fileID: 11400000, guid: 10533a09168a96a42a67ddc5f166e7ba, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
