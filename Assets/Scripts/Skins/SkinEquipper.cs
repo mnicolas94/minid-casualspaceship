@@ -13,6 +13,8 @@ namespace Skins
     {
         [SerializeField] private CharacterReferences _character;
         [SerializeField] private PersistedEquippedSkin _persistence;
+        [SerializeField] private AddressableSkinData _defaultSkinSpaceship;
+        [SerializeField] private AddressableSkinData _defaultSkinTrail;
 
         private readonly PrefabsToInstanceMap _spaceshipPrefabsInstances = new();
         private readonly PrefabsToInstanceMap _trailPrefabsInstances = new();
@@ -38,8 +40,10 @@ namespace Skins
         private async void Start()
         {
             await SaveLoadBroadcaster.Instance.WaitToBeLoadedOrAlreadyLoadedAsync(_persistence, _cts.Token);
-            EquipSkin(_persistence.SpaceshipSkin);
-            EquipSkin(_persistence.TrailSkin);
+            var spaceshipSkin = _persistence.SpaceshipSkin ?? _defaultSkinSpaceship;
+            var trailSkin = _persistence.TrailSkin ?? _defaultSkinTrail;
+            EquipSkin(spaceshipSkin);
+            EquipSkin(trailSkin);
         }
 
         public async Task<bool> IsEquipped(AddressableSkinData skin)

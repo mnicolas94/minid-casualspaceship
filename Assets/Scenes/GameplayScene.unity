@@ -793,6 +793,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _character: {fileID: 1254335892}
   _persistence: {fileID: 11400000, guid: b2c44eaf560dcda4c96d0ac3a54bbf4f, type: 2}
+  _defaultSkinSpaceship:
+    m_AssetGUID: 67fd70e86b22ebc44822c3be5593d46f
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _defaultSkinTrail:
+    m_AssetGUID: eac4148553ad11c459517f512c8b3e1e
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
 --- !u!4 &1709337783
 Transform:
   m_ObjectHideFlags: 0
