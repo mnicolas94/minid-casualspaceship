@@ -36,7 +36,6 @@ MonoBehaviour:
     - com.coffee.softmask-for-ugui
     - com.dbrizov
     - com.facticus.utils
-    - com.jnk.tinycontainer
     - com.mackysoft.choice
     - com.mackysoft.serializereference-extensions
     - com.needle
@@ -54,6 +53,6 @@ MonoBehaviour:
   m_RegistryInfoDraft:
     m_Modified: 0
     m_ErrorMessage: 
-    m_UserModificationsInstanceId: -840
+    m_UserModificationsInstanceId: -838
     m_OriginalInstanceId: -842
   m_LoadAssets: 0

@@ -15,6 +15,7 @@
     "com.facticus.unity-atoms-extensions": "https://github.com/mnicolas94/facticus-unity-atoms-extensions.git",
     "com.facticus.utils": "https://github.com/mnicolas94/UnityUtils.git",
     "com.github.siccity.serializablecallback": "https://github.com/mnicolas94/SerializableCallback.git",
+    "com.jnk.tinycontainer" : "https://github.com/mnicolas94/fork-TinyContainer.git?path=Assets/TinyContainer",
     "com.mackysoft.choice": "1.2.3",
     "com.mackysoft.serializereference-extensions": "1.1.9",
     "com.solidalloy.util": "https://github.com/mnicolas94/SolidAlloy-SolidUtilities.git",
@@ -75,7 +76,6 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0",
-    "com.jnk.tinycontainer": "1.5.0",
     "com.coffee.softmask-for-ugui": "1.0.2"
   },
   "scopedRegistries": [
@@ -89,7 +89,6 @@
         "com.coffee.softmask-for-ugui",
         "com.dbrizov",
         "com.facticus.utils",
-        "com.jnk.tinycontainer",
         "com.mackysoft.choice",
         "com.mackysoft.serializereference-extensions",
         "com.needle",

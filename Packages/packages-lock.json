@@ -134,11 +134,11 @@
       "hash": "d27fce0368b938ccd4a77c5e66abe9b0744065be"
     },
     "com.jnk.tinycontainer": {
-      "version": "1.5.0",
+      "version": "https://github.com/mnicolas94/fork-TinyContainer.git?path=Assets/TinyContainer",
       "depth": 0,
-      "source": "registry",
+      "source": "git",
       "dependencies": {},
-      "url": "https://package.openupm.com"
+      "hash": "734219bb12d3f69a30aec8ec1dd902c430ecf42e"
     },
     "com.mackysoft.choice": {
       "version": "1.2.3",
