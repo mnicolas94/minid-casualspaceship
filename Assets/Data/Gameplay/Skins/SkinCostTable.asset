@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08d4699b942640a29980258536f796b0, type: 3}
+  m_Name: SkinCostTable
+  m_EditorClassIdentifier: 
+  _costs:
+  - skin:
+      m_AssetGUID: 67fd70e86b22ebc44822c3be5593d46f
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    unlockCost:
+      mode: 0
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: -2
+  - skin:
+      m_AssetGUID: 229b29b4b63ea464db49c1cde4740dbe
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    unlockCost:
+      mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 1904655984172990469
+  - skin:
+      m_AssetGUID: e0a6aa83b5030de4c9f8d593341e8488
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    unlockCost:
+      mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 1904655984172990473
+  - skin:
+      m_AssetGUID: d77051671883710448d1042341d13e69
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    unlockCost:
+      mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 1904655984172990471
+  - skin:
+      m_AssetGUID: d19d7046c5ffa7342900fd4eeea2720b
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    unlockCost:
+      mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 1904655984172990472
+  - skin:
+      m_AssetGUID: eac4148553ad11c459517f512c8b3e1e
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    unlockCost:
+      mode: 0
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: -2
+  - skin:
+      m_AssetGUID: 7d82eb8df7bcb9740bf6a1ef6c854f43
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    unlockCost:
+      mode: 0
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: -2
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1904655984172990469
+      type: {class: CurrencyCost, ns: Currency, asm: com.minidgames.casualspaceship}
+      data:
+        _cost:
+          _usage: 0
+          _value: 5
+          _constant: {fileID: 0}
+          _variable: {fileID: 0}
+          _variableInstancer: {fileID: 0}
+        _currency: {fileID: 11400000, guid: 5db79252fe7e9c844ab14014509c5da9, type: 2}
+    - rid: 1904655984172990471
+      type: {class: CurrencyCost, ns: Currency, asm: com.minidgames.casualspaceship}
+      data:
+        _cost:
+          _usage: 0
+          _value: 150
+          _constant: {fileID: 0}
+          _variable: {fileID: 0}
+          _variableInstancer: {fileID: 0}
+        _currency: {fileID: 11400000, guid: 5db79252fe7e9c844ab14014509c5da9, type: 2}
+    - rid: 1904655984172990472
+      type: {class: CurrencyCost, ns: Currency, asm: com.minidgames.casualspaceship}
+      data:
+        _cost:
+          _usage: 0
+          _value: 1000
+          _constant: {fileID: 0}
+          _variable: {fileID: 0}
+          _variableInstancer: {fileID: 0}
+        _currency: {fileID: 11400000, guid: 5db79252fe7e9c844ab14014509c5da9, type: 2}
+    - rid: 1904655984172990473
+      type: {class: CurrencyCost, ns: Currency, asm: com.minidgames.casualspaceship}
+      data:
+        _cost:
+          _usage: 0
+          _value: 10
+          _constant: {fileID: 0}
+          _variable: {fileID: 0}
+          _variableInstancer: {fileID: 0}
+        _currency: {fileID: 11400000, guid: 5db79252fe7e9c844ab14014509c5da9, type: 2}

@@ -12,6 +12,7 @@ namespace Skins.UI
 {
     public class SkinView : ViewBaseBehaviour<AddressableSkinData>
     {
+        [SerializeField] private SkinCostTable _costTable;
         [SerializeField] private SkinDataEvent _equipEvent;
         [SerializeField] private SkinDataEvent _costPaidEvent;
         
@@ -110,7 +111,8 @@ namespace Skins.UI
             _costView.gameObject.SetActive(!_unlocked);
             if (!_unlocked)
             {
-                _costView.Initialize(_skinData.UnlockCost);
+                var unlockCost = _costTable.GetCost(_model);
+                _costView.Initialize(unlockCost);
             }
         }
 
@@ -137,7 +139,8 @@ namespace Skins.UI
             Debug.Log($"OnPayCostButtonClick");
             
             var ct = _cts.Token;
-            var paid = await _skinData.UnlockCost.PayCost(ct);
+            var unlockCost = _costTable.GetCost(_model);
+            var paid = await unlockCost.PayCost(ct);
             Debug.Log($"after pay cost. paid={paid}");
 
             if (paid)

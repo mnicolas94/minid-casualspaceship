@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using SaveSystem;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using Unlockables;
 
 namespace Currency
@@ -26,7 +27,8 @@ namespace Currency
         {
             var canAfford = await CanAfford(ct);
             Debug.Log($"canAfford={canAfford}");
-            Debug.Log($"currency={_currency.Variable.Value}");
+            Debug.Log($"currency={_currency.Variable.Value}; {_currency.Variable}; {_currency}");
+            Debug.Log($"currency guid={AssetGuidsDatabase.Instance.GetGuid(_currency.Variable)}");
             Debug.Log($"cost={_cost.Value}");
             if (canAfford)
             {

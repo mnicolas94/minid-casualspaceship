@@ -209,6 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 373700795d364887a2a0fbaf2307e649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _costTable: {fileID: 11400000, guid: bd72a81a3d864b444a9b36196459c840, type: 2}
   _equipEvent: {fileID: 11400000, guid: e8a4fe0130991de4f90c1a54c305f725, type: 2}
   _costPaidEvent: {fileID: 11400000, guid: 2cfa4eb7d1c87de48bef8e23145e3563, type: 2}
   _nameText: {fileID: 0}

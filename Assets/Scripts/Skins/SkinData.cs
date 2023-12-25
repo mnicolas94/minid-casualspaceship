@@ -19,8 +19,6 @@ namespace Skins
         [SerializeField] private GameObject _prefab;
         [SerializeField] private SkinType _skinType;
 
-        [SerializeField] private SerializableInterface<IUnlockCost> _unlockCost;
-
         public Sprite PreviewSprite => _previewSprite;
 
         public LocalizedString SkinName => _skinName;
@@ -28,7 +26,5 @@ namespace Skins
         public GameObject Prefab => _prefab;
 
         public SkinType SkinType => _skinType;
-
-        public IUnlockCost UnlockCost => _unlockCost.Value;
     }
 }
