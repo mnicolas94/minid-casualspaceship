@@ -23,6 +23,9 @@ namespace Unlockables
 
         public async Task<bool> IsUnlocked(T t, CancellationToken ct)
         {
+            Debug.Log($"Default storage\n" +
+                      $"{t} is unlocked: {_list.Contains(t)}\n" +
+                      $"\t{string.Join("\n", _list)}");
             return _list.Contains(t);
         }
 

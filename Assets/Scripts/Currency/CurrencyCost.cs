@@ -25,6 +25,9 @@ namespace Currency
         public async Task<bool> PayCost(CancellationToken ct)
         {
             var canAfford = await CanAfford(ct);
+            Debug.Log($"canAfford={canAfford}");
+            Debug.Log($"currency={_currency.Variable.Value}");
+            Debug.Log($"cost={_cost.Value}");
             if (canAfford)
             {
                 _currency.Variable.Value -= _cost;

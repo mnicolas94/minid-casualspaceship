@@ -1357,10 +1357,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3847351656387875457, guid: 5672cdb9684986e4fa6ffa279fa5a5dc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9155122281038329730}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2045474620421284851, guid: 5672cdb9684986e4fa6ffa279fa5a5dc, type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 2943208226862299329}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5672cdb9684986e4fa6ffa279fa5a5dc, type: 3}
 --- !u!114 &2261867395632462453 stripped
 MonoBehaviour:
@@ -1383,34 +1380,3 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2817946940892340133, guid: 5672cdb9684986e4fa6ffa279fa5a5dc, type: 3}
   m_PrefabInstance: {fileID: 8337807039235565903}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8058957371162659516 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2045474620421284851, guid: 5672cdb9684986e4fa6ffa279fa5a5dc, type: 3}
-  m_PrefabInstance: {fileID: 8337807039235565903}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2943208226862299329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8058957371162659516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3871f69be4fd4134ac2b1a25d62b0169, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _currentSoftCurrency:
-    _usage: 2
-    _value: 0
-    _constant: {fileID: 0}
-    _variable: {fileID: 11400000, guid: b3b990364bd7a7742aa58ea3f86e6405, type: 2}
-    _variableInstancer: {fileID: 0}
-  _currentHardCurrency:
-    _usage: 2
-    _value: 0
-    _constant: {fileID: 0}
-    _variable: {fileID: 11400000, guid: 8929d6036f2683249ae23ef5c0cd7c20, type: 2}
-    _variableInstancer: {fileID: 0}
-  _totalSoftCurrency: {fileID: 11400000, guid: 42be2050c7ef0dd4a924e5b556c3ae95, type: 2}
-  _totalHardCurrency: {fileID: 11400000, guid: 42be2050c7ef0dd4a924e5b556c3ae95, type: 2}

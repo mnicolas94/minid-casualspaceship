@@ -40,7 +40,6 @@ namespace Skins.UI
             _equipEvent.Unregister(EquipSkin);
             _costPaidEvent.Unregister(UnlockSkin);
             _storage.Value.UnlockedEvent -= OnSkinUnlocked;
-            
         }
 
         private async void Start()
@@ -60,6 +59,7 @@ namespace Skins.UI
             foreach (var skinData in skins)
             {
                 var unlocked = await _storage.Value.IsUnlocked(skinData, ct);
+                Debug.Log($"{skinData}");
                 AddSkinToList(skinData, unlocked);
             }
 

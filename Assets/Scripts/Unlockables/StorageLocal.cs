@@ -3,18 +3,17 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using SaveSystem;
-using UnityAtoms;
 using UnityEngine;
 
 namespace Unlockables
 {
     public abstract class StorageLocal<T> : ScriptableObject, IUnlockablesStorage<T>
     {
-        [SerializeField] private List<T> _list;
+        [SerializeField] private List<T> _list = new ();
 
         public async Task Initialize(CancellationToken ct)
         {
-            await this.Load();
+            await this.LoadOrCreate();
         }
 
         public async Task Dispose(CancellationToken ct)

@@ -134,8 +134,12 @@ namespace Skins.UI
         {
             _payCostButton.interactable = false;
 
+            Debug.Log($"OnPayCostButtonClick");
+            
             var ct = _cts.Token;
             var paid = await _skinData.UnlockCost.PayCost(ct);
+            Debug.Log($"after pay cost. paid={paid}");
+
             if (paid)
             {
                 _costPaidEvent.Raise(_model);
