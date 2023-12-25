@@ -254,28 +254,6 @@
                 },
                 {
                     "name": "",
-                    "id": "c5d6a180-7d5d-40d0-8ecf-ce0f3b10fe3a",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "1947d743-da4a-48c5-a036-0b6e4748220c",
-                    "path": "<Touchscreen>/primaryTouch/tap",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Touch",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "f9767053-ed57-42f0-9597-0f72dea5c9fd",
                     "path": "<Joystick>/trigger",
                     "interactions": "",

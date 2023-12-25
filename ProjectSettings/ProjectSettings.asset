@@ -140,7 +140,6 @@ PlayerSettings:
   - {fileID: 11400000, guid: 04c99e54b1a99514db8e8375dafa241e, type: 2}
   - {fileID: 11400000, guid: 6d65d40fd989d5649a40a6bea17942ea, type: 2}
   - {fileID: 11400000, guid: 7e6b7d69de8eede48888eb48d0230349, type: 2}
-  - {fileID: 11400000, guid: 9ca2b2f908f07bd4098f2532f8b97ee9, type: 2}
   - {fileID: 11400000, guid: 10533a09168a96a42a67ddc5f166e7ba, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -161,7 +160,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.TheSolarMoose.UnityProjectTemplate
+    Android: com.MiniDGames.CasualSpaceshipTemporalname
     Standalone: com.Mini-D-Games.Casual-Spaceship--Temporal-name-
   buildNumber:
     Standalone: 0.1.0
@@ -169,7 +168,7 @@ PlayerSettings:
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 0
-  AndroidBundleVersionCode: 1
+  AndroidBundleVersionCode: 1000
   AndroidMinSdkVersion: 22
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
