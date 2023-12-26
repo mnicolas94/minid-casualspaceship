@@ -34,3 +34,5 @@ MonoBehaviour:
       type: {class: OdinPersistentSerializer, ns: SaveSystem.Serializers, asm: com.facticus.savesystem}
       data:
         _format: 0
+        _aotAdditionalTypes:
+        - OdinSerializer.OdinSerializer.StringSerializer

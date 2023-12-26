@@ -9,16 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf8a67b68db3d4650908f8cf6adeda60, type: 3}
+  m_Script: {fileID: 11500000, guid: a775d87ee37047838b1cfa895447684b, type: 3}
   m_Name: TotalCurrency-Hard
   m_EditorClassIdentifier: 
-  _developerDescription: 
-  _id: 
   _value: 0
-  _changed: {fileID: 0}
-  _changedWithHistory: {fileID: 0}
-  _triggerChangedOnOnEnable: 0
-  _triggerChangedWithHistoryOnOnEnable: 0
-  _oldValue: 0
-  _initialValue: 0
-  _preChangeTransformers: []
+  _variable: {fileID: 11400000, guid: bbae57a5057d5a34c96e04c65528dd6c, type: 2}
+  _autoSave: 1

@@ -17,16 +17,13 @@ namespace Currency
             CollectCurrencies();
         }
 
-        private async void CollectCurrencies()
+        private void CollectCurrencies()
         {
             _totalSoftCurrency.Value += _currentSoftCurrency;
             _totalHardCurrency.Value += _currentHardCurrency;
             
             _currentSoftCurrency.Value = 0;
             _currentHardCurrency.Value = 0;
-            
-            await _totalSoftCurrency.Save();
-            await _totalHardCurrency.Save();
         }
     }
 }
