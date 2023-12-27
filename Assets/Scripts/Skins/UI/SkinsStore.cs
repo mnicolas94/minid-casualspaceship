@@ -59,14 +59,8 @@ namespace Skins.UI
             foreach (var skinData in skins)
             {
                 var unlocked = await _storage.Value.IsUnlocked(skinData, ct);
-                Debug.Log($"{skinData}");
                 AddSkinToList(skinData, unlocked);
             }
-
-            // make sure layouts get re-built after adding elements to them
-            await Task.Yield();
-            LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform)_unlockedList.transform);
-            LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform)_lockedList.transform);
         }
 
         private async Task<IEnumerable<AddressableSkinData>> LoadAddressableSkinsAsync()
@@ -80,7 +74,6 @@ namespace Skins.UI
 #else
                     var guid = loc.PrimaryKey;
 #endif
-                    Debug.Log(guid);
                     return new AddressableSkinData(guid);
                 });
             return skins;
@@ -127,6 +120,11 @@ namespace Skins.UI
             }
             
             // TODO keep order
+            
+            // make sure layouts get re-built after adding elements to them
+            await Task.Yield();
+            LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform)_unlockedList.transform);
+            LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform)_lockedList.transform);
         }
 
         private void EquipSkin(AddressableSkinData skin)
