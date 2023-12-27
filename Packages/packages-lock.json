@@ -60,6 +60,17 @@
       },
       "hash": "e11404154e79772ae6258cc974a4d1dd092d860b"
     },
+    "com.facticus.facticus-missions": {
+      "version": "https://github.com/mnicolas94/facticus-missions.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.mackysoft.serializereference-extensions": "1.1.9",
+        "com.unity.localization": "1.4.5",
+        "net.tnrd.serializableinterface": "2.1.0"
+      },
+      "hash": "4dc845422c8ff8c5c2a68229108445033b3af2f2"
+    },
     "com.facticus.fonts-collection": {
       "version": "https://github.com/mnicolas94/facticus-fonts-collection.git",
       "depth": 0,
@@ -362,8 +373,8 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.localization": {
-      "version": "1.4.4",
-      "depth": 0,
+      "version": "1.4.5",
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.addressables": "1.21.8",

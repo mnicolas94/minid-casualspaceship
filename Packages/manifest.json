@@ -2,10 +2,12 @@
   "dependencies": {
     "com.brunomikoski.animationsequencer": "0.5.4",
     "com.codewriter.triinspector": "https://github.com/codewriter-packages/Tri-Inspector.git",
+    "com.coffee.softmask-for-ugui": "1.0.2",
     "com.facticus.animator-sequencer-extensions": "https://github.com/mnicolas94/facticus-animator-sequencer-extensions.git",
     "com.facticus.asyncutils": "https://github.com/mnicolas94/unity-async-utils.git",
     "com.facticus.audio": "https://github.com/mnicolas94/facticus-audio.git",
     "com.facticus.deploy": "https://github.com/mnicolas94/facticus-deploy.git",
+    "com.facticus.facticus-missions": "https://github.com/mnicolas94/facticus-missions.git",
     "com.facticus.fonts-collection": "https://github.com/mnicolas94/facticus-fonts-collection.git",
     "com.facticus.git-team": "https://github.com/mnicolas94/facticus-git-team.git",
     "com.facticus.loadingutils": "https://github.com/mnicolas94/unity-loading-utils.git",
@@ -15,12 +17,12 @@
     "com.facticus.unity-atoms-extensions": "https://github.com/mnicolas94/facticus-unity-atoms-extensions.git",
     "com.facticus.utils": "https://github.com/mnicolas94/UnityUtils.git",
     "com.github.siccity.serializablecallback": "https://github.com/mnicolas94/SerializableCallback.git",
-    "com.jnk.tinycontainer" : "https://github.com/mnicolas94/fork-TinyContainer.git?path=Assets/TinyContainer",
+    "com.jnk.tinycontainer": "https://github.com/mnicolas94/fork-TinyContainer.git?path=Assets/TinyContainer",
     "com.mackysoft.choice": "1.2.3",
     "com.mackysoft.serializereference-extensions": "1.1.9",
-    "com.solidalloy.util": "https://github.com/mnicolas94/SolidAlloy-SolidUtilities.git",
-    "com.solidalloy.unity-dropdown": "https://github.com/mnicolas94/SolidAlloy-UnityDropdown.git",
     "com.solidalloy.type-references": "https://github.com/mnicolas94/SolidAlloy-ClassTypeReference-for-Unity.git",
+    "com.solidalloy.unity-dropdown": "https://github.com/mnicolas94/SolidAlloy-UnityDropdown.git",
+    "com.solidalloy.util": "https://github.com/mnicolas94/SolidAlloy-SolidUtilities.git",
     "com.unity-atoms.unity-atoms-base-atoms": "4.4.8",
     "com.unity-atoms.unity-atoms-core": "4.4.5",
     "com.unity.2d.animation": "9.0.3",
@@ -75,8 +77,7 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0",
-    "com.coffee.softmask-for-ugui": "1.0.2"
+    "com.unity.modules.xr": "1.0.0"
   },
   "scopedRegistries": [
     {
