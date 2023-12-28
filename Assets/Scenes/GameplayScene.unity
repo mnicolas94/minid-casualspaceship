@@ -953,6 +953,82 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1722777610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1722777612}
+  - component: {fileID: 1722777611}
+  m_Layer: 0
+  m_Name: MissionsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1722777611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722777610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92a045bdef474a5d99994e807b1f2e52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentMissions: {fileID: 11400000, guid: 3b08a8ff033c1314e8a52c15159e9c34, type: 2}
+  _missionsPool: {fileID: 11400000, guid: b4f0523de510b1d43a5f062f9c3a2bd4, type: 2}
+  _maxMissions:
+    _mode: 0
+    _value: 3
+    _callback:
+      _target: {fileID: 0}
+      _methodName: 
+      _args: []
+      _dynamic: 0
+      _typeName: SerializableCallback.SerializableCallback`1[[System.Int32, mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Siccity.SerializableCallback,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      dirty: 0
+  _canCreateMission:
+    _mode: 0
+    _value: 1
+    _callback:
+      _target: {fileID: 0}
+      _methodName: 
+      _args: []
+      _dynamic: 0
+      _typeName: SerializableCallback.SerializableCallback`1[[System.Boolean, mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Siccity.SerializableCallback,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      dirty: 0
+  _onMissionCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  _onMissionCompletedWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1722777612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722777610}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1749785567
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,6 +1193,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f27bba93f5af7dc41b73abd26796d96c, type: 2}
   - {fileID: 11400000, guid: 5fa167bd104300f4797eba203049b187, type: 2}
   - {fileID: 11400000, guid: b2c44eaf560dcda4c96d0ac3a54bbf4f, type: 2}
+  - {fileID: 11400000, guid: 3b08a8ff033c1314e8a52c15159e9c34, type: 2}
 --- !u!4 &1833792200
 Transform:
   m_ObjectHideFlags: 0
@@ -1307,6 +1384,37 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: -10
   m_TargetDisplay: 0
+--- !u!1 &2107218605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2107218606}
+  m_Layer: 0
+  m_Name: ---> Gameplay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2107218606
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107218605}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2134692982
 GameObject:
   m_ObjectHideFlags: 0
@@ -1423,11 +1531,13 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 322294576}
   - {fileID: 5828937835184505660}
-  - {fileID: 1709337783}
   - {fileID: 1639821961}
+  - {fileID: 2107218606}
   - {fileID: 1992022606}
   - {fileID: 1749785570}
   - {fileID: 1523713025}
-  - {fileID: 1124311956}
-  - {fileID: 1833792200}
   - {fileID: 837716991}
+  - {fileID: 1124311956}
+  - {fileID: 1709337783}
+  - {fileID: 1833792200}
+  - {fileID: 1722777612}

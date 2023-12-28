@@ -69,7 +69,7 @@
         "com.unity.localization": "1.4.5",
         "net.tnrd.serializableinterface": "2.1.0"
       },
-      "hash": "4dc845422c8ff8c5c2a68229108445033b3af2f2"
+      "hash": "a92c98f284adfcb21181970aa2fb6df01ae37361"
     },
     "com.facticus.fonts-collection": {
       "version": "https://github.com/mnicolas94/facticus-fonts-collection.git",
@@ -135,7 +135,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "95e57cd1fdd33f6a5edf198c59c26bdfe4fa1431"
+      "hash": "ac7f5638f6881b963150b0c4700ba076cede9356"
     },
     "com.github.siccity.serializablecallback": {
       "version": "https://github.com/mnicolas94/SerializableCallback.git",
