@@ -963,6 +963,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1722777612}
   - component: {fileID: 1722777611}
+  - component: {fileID: 1722777613}
   m_Layer: 0
   m_Name: MissionsManager
   m_TagString: Untagged
@@ -1029,6 +1030,46 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1722777613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722777610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fa1b5883eda4adfa90ef1451fb40847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentMissions: {fileID: 11400000, guid: 3b08a8ff033c1314e8a52c15159e9c34, type: 2}
+  _onLoaded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1722777611}
+        m_TargetAssemblyTypeName: Missions.MissionsManager, com.facticus.missions
+        m_MethodName: EnsureMaxMission
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1722777611}
+        m_TargetAssemblyTypeName: Missions.MissionsManager, com.facticus.missions
+        m_MethodName: StartMissions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1749785567
 GameObject:
   m_ObjectHideFlags: 0
@@ -1193,7 +1234,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f27bba93f5af7dc41b73abd26796d96c, type: 2}
   - {fileID: 11400000, guid: 5fa167bd104300f4797eba203049b187, type: 2}
   - {fileID: 11400000, guid: b2c44eaf560dcda4c96d0ac3a54bbf4f, type: 2}
-  - {fileID: 11400000, guid: 3b08a8ff033c1314e8a52c15159e9c34, type: 2}
 --- !u!4 &1833792200
 Transform:
   m_ObjectHideFlags: 0

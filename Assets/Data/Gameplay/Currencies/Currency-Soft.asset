@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sprite: {fileID: 0}
   _variable: {fileID: 11400000, guid: 42be2050c7ef0dd4a924e5b556c3ae95, type: 2}
+  _currentInGame: {fileID: 11400000, guid: b3b990364bd7a7742aa58ea3f86e6405, type: 2}
