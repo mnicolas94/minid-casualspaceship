@@ -60,17 +60,6 @@
       },
       "hash": "e11404154e79772ae6258cc974a4d1dd092d860b"
     },
-    "com.facticus.facticus-missions": {
-      "version": "https://github.com/mnicolas94/facticus-missions.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.mackysoft.serializereference-extensions": "1.1.9",
-        "com.unity.localization": "1.4.5",
-        "net.tnrd.serializableinterface": "2.1.0"
-      },
-      "hash": "a92c98f284adfcb21181970aa2fb6df01ae37361"
-    },
     "com.facticus.fonts-collection": {
       "version": "https://github.com/mnicolas94/facticus-fonts-collection.git",
       "depth": 0,
@@ -94,6 +83,17 @@
         "com.facticus.utils": "0.12.80"
       },
       "hash": "cb64608984cdb8e31df4800eef27f1972533c496"
+    },
+    "com.facticus.missions": {
+      "version": "https://github.com/mnicolas94/facticus-missions.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.mackysoft.serializereference-extensions": "1.1.9",
+        "com.unity.localization": "1.4.5",
+        "net.tnrd.serializableinterface": "2.1.0"
+      },
+      "hash": "79fcda3ccf0809e5a6686d9f0f3c96f2e58e7cfd"
     },
     "com.facticus.modelview": {
       "version": "https://github.com/mnicolas94/facticus-modelview.git",

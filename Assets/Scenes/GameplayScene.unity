@@ -1573,18 +1573,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 7a9e374666ad6cc47807bb001844f3d8, type: 3}
-    - target: {fileID: 5928983831040674866, guid: b6ba7629617895c4290e4b15a98a3aed, type: 3}
-      propertyPath: _baseHorizontalSpeed._usage
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5928983831040674866, guid: b6ba7629617895c4290e4b15a98a3aed, type: 3}
-      propertyPath: _baseHorizontalSpeed._variable
-      value: 
-      objectReference: {fileID: 11400000, guid: 2dbe5d9fffb85a34abb6fe6420e7525d, type: 2}
-    - target: {fileID: 5928983831040674866, guid: b6ba7629617895c4290e4b15a98a3aed, type: 3}
-      propertyPath: _recoverPositionSpeedScale._value
-      value: 0.4
-      objectReference: {fileID: 0}
     - target: {fileID: 7618914287822869372, guid: b6ba7629617895c4290e4b15a98a3aed, type: 3}
       propertyPath: _camera
       value: 
