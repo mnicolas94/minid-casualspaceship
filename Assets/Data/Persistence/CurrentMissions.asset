@@ -12,7 +12,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b1ae6878f3b4757a86c3467af1e76c9, type: 3}
   m_Name: CurrentMissions
   m_EditorClassIdentifier: 
-  _missions: []
+  _missions:
+  - rid: 1904656075468308489
+  - rid: 1904656075468308490
+  - rid: 1904656075468308491
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1904656075468308489
+      type: {class: MissionCollectXCoins, ns: Missions, asm: com.minidgames.casualspaceship}
+      data:
+        _reward:
+          rid: -2
+        _description:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _currency: {fileID: 11400000, guid: 5db79252fe7e9c844ab14014509c5da9, type: 2}
+        _goal: 100
+        _currentCollected: 0
+    - rid: 1904656075468308490
+      type: {class: MissionCollectXCoins, ns: Missions, asm: com.minidgames.casualspaceship}
+      data:
+        _reward:
+          rid: -2
+        _description:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _currency: {fileID: 11400000, guid: 5db79252fe7e9c844ab14014509c5da9, type: 2}
+        _goal: 100
+        _currentCollected: 0
+    - rid: 1904656075468308491
+      type: {class: MissionCollectXCoins, ns: Missions, asm: com.minidgames.casualspaceship}
+      data:
+        _reward:
+          rid: -2
+        _description:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _currency: {fileID: 11400000, guid: 5db79252fe7e9c844ab14014509c5da9, type: 2}
+        _goal: 100
+        _currentCollected: 0
