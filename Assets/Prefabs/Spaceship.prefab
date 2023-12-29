@@ -96,7 +96,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1669749930071342798}
+  - {fileID: 3534302868321827700}
   m_Father: {fileID: 3581962886798057243}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3609469879768501302
@@ -651,7 +651,7 @@ MonoBehaviour:
   _deadAnimation: {fileID: 7010920975459392892}
   _rebornAnimation: {fileID: 0}
   _moveToInitialPositionAnimation: {fileID: 1911849668601569346}
-  _trailParticleSystem: {fileID: 4734308584705583531}
+  _trailParticleSystem: {fileID: 7463552679485156369}
 --- !u!114 &7618914287822869372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -685,9 +685,15 @@ MonoBehaviour:
     _constant: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
-  _recoverPositionSpeed:
+  _baseHorizontalSpeed:
+    _usage: 2
+    _value: 0
+    _constant: {fileID: 0}
+    _variable: {fileID: 11400000, guid: 2dbe5d9fffb85a34abb6fe6420e7525d, type: 2}
+    _variableInstancer: {fileID: 0}
+  _recoverPositionSpeedScale:
     _usage: 0
-    _value: 2
+    _value: 0.4
     _constant: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
@@ -930,12 +936,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc863dfed2c7bff46a177594c40b5670, type: 3}
---- !u!4 &1669749930071342798 stripped
+--- !u!4 &3534302868321827700 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8532051685629305778, guid: cc863dfed2c7bff46a177594c40b5670, type: 3}
   m_PrefabInstance: {fileID: 5146403219441866950}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &4734308584705583531 stripped
+--- !u!198 &7463552679485156369 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 2375771847185855703, guid: cc863dfed2c7bff46a177594c40b5670, type: 3}
   m_PrefabInstance: {fileID: 5146403219441866950}

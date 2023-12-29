@@ -10,7 +10,8 @@ namespace Actions
     public class DashAction : MonoBehaviour
     {
         [SerializeField] private FloatReference _distance;
-        [SerializeField] private FloatReference _recoverPositionSpeed;
+        [SerializeField] private FloatReference _baseHorizontalSpeed;
+        [SerializeField] private FloatReference _recoverPositionSpeedScale;
         [SerializeField] private FloatReference _cooldown;
 
         [SerializeField] private Collider2D _collider;
@@ -74,7 +75,8 @@ namespace Actions
                     var delta = Time.time - time;
                     time = Time.time;
                     position = selfTransform.position;
-                    position.x -= _recoverPositionSpeed * delta;
+                    var recoverSpeed = _baseHorizontalSpeed * _recoverPositionSpeedScale;
+                    position.x -= recoverSpeed * delta;
                     selfTransform.position = position;
                     
                     await Task.Yield();

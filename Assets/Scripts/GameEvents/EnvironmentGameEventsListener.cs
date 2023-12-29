@@ -71,6 +71,9 @@ namespace GameEvents
 
         private void ResetGame()
         {
+            // make sure the game is ended. Useful for Pause->Reset state transition
+            EndGame();
+            
             // reset score
             _score.Value = 0;
             _currentSoftCurrency.Value = 0;
