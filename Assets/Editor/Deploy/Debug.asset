@@ -10,25 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d6228cd6dd744bb8b6bc1150736cb0a, type: 3}
-  m_Name: Debug Android
+  m_Name: Debug
   m_EditorClassIdentifier: 
   _repositoryBranchOrTag: main
   _overrideVariables: []
   _platforms:
-  - _enabled: 1
+  - _enabled: 0
     _developmentBuild: 0
     _freeDiskSpaceBeforeBuild: 1
     _buildPlatform:
       rid: 3334506971384512517
     _deployPlatform:
       rid: 3334506971384512515
-  - _enabled: 1
+  - _enabled: 0
     _developmentBuild: 0
     _freeDiskSpaceBeforeBuild: 0
     _buildPlatform:
       rid: 1904655895536861197
     _deployPlatform:
       rid: 1904655895536861196
+  - _enabled: 1
+    _developmentBuild: 0
+    _freeDiskSpaceBeforeBuild: 0
+    _buildPlatform:
+      rid: 8263538004916174850
+    _deployPlatform:
+      rid: 8263538006821175296
   references:
     version: 2
     RefIds:
@@ -46,3 +53,9 @@ MonoBehaviour:
       type: {class: Android, ns: Deploy.Editor.BuildPlatforms, asm: com.facticus.deploy.editor}
       data:
         appBundle: 0
+    - rid: 8263538004916174850
+      type: {class: WebGL, ns: Deploy.Editor.BuildPlatforms, asm: com.facticus.deploy.editor}
+    - rid: 8263538006821175296
+      type: {class: Itch, ns: Deploy.Editor.DeployPlatforms, asm: com.facticus.deploy.editor}
+      data:
+        channel: html5
