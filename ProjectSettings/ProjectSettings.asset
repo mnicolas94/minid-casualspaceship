@@ -133,7 +133,7 @@ PlayerSettings:
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
-  bundleVersion: 0.1.0
+  bundleVersion: 0.1.27
   preloadedAssets:
   - {fileID: 11400000, guid: 07c62301ec2e2154ea2e140dce7f3344, type: 2}
   - {fileID: 11400000, guid: 080a89b675256b744b8bf3fa54eb2741, type: 2}
@@ -141,6 +141,7 @@ PlayerSettings:
   - {fileID: 11400000, guid: 6d65d40fd989d5649a40a6bea17942ea, type: 2}
   - {fileID: 11400000, guid: 7e6b7d69de8eede48888eb48d0230349, type: 2}
   - {fileID: 11400000, guid: 10533a09168a96a42a67ddc5f166e7ba, type: 2}
+  - {fileID: 11400000, guid: 9ca2b2f908f07bd4098f2532f8b97ee9, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -168,7 +169,7 @@ PlayerSettings:
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 0
-  AndroidBundleVersionCode: 1000
+  AndroidBundleVersionCode: 1001
   AndroidMinSdkVersion: 22
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -783,7 +784,13 @@ PlayerSettings:
   XboxOneOverrideIdentityName: 
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    Build: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -803,11 +810,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: e54d2feb-7ec2-4543-8137-f8dec4791d99
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: Casual Spaceship (Temporal name)
+  organizationId: miguelcok
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
