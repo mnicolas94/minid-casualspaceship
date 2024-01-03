@@ -61,6 +61,6 @@ MonoBehaviour:
       type: {class: PlayStore, ns: Deploy.Editor.DeployPlatforms, asm: com.facticus.deploy.editor}
       data:
         track: internal
-        status: completed
+        status: draft
         inAppUpdatePriority: 5
         userFraction: 0.9999
