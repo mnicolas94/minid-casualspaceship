@@ -128,7 +128,7 @@
         "com.unity.textmeshpro": "3.0.6",
         "net.tnrd.serializableinterface": "1.12.1"
       },
-      "hash": "23734055f6d403bbe6e73cca9bba9cf237be52da"
+      "hash": "59ca2fab0d2b68ca75bff7758ee870740ffcd39c"
     },
     "com.facticus.unity-atoms-extensions": {
       "version": "https://github.com/mnicolas94/facticus-unity-atoms-extensions.git",
@@ -414,6 +414,19 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.purchasing": {
+      "version": "4.10.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.androidjni": "1.0.0",
+        "com.unity.services.core": "1.8.2"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.scriptablebuildpipeline": {
