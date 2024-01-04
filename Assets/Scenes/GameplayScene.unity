@@ -1141,18 +1141,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3053649003370268434, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
-      propertyPath: _iOSGameId
-      value: 5517130
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053649003370268434, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
-      propertyPath: _androidGameId
-      value: 5517131
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053649003370268434, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
-      propertyPath: _testModeCallback._value
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8153742413880878971, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
       propertyPath: m_Name
       value: Services
