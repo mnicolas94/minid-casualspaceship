@@ -39,7 +39,7 @@
       "dependencies": {
         "com.facticus.utils": "0.9.1"
       },
-      "hash": "3438f0b17d328a3abc5f60036d3e1668ab01283e"
+      "hash": "cd39cf9ea0a03d3b22e9b05588fa0119c91530c7"
     },
     "com.facticus.audio": {
       "version": "https://github.com/mnicolas94/facticus-audio.git",
@@ -93,7 +93,7 @@
         "com.unity.localization": "1.4.5",
         "net.tnrd.serializableinterface": "2.1.0"
       },
-      "hash": "79fcda3ccf0809e5a6686d9f0f3c96f2e58e7cfd"
+      "hash": "b51b676a1f9a3a1dfa7327d5648df74763278bb0"
     },
     "com.facticus.modelview": {
       "version": "https://github.com/mnicolas94/facticus-modelview.git",

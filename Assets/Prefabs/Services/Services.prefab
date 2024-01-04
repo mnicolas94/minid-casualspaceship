@@ -110,11 +110,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e3b67eb9da141b3927cf4527c381af6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _androidGameId: 
-  _iOSGameId: 
+  _androidGameId: 5517131
+  _iOSGameId: 5517130
   _testModeCallback:
     _mode: 0
-    _value: 0
+    _value: 1
     _callback:
       _target: {fileID: 0}
       _methodName: 
