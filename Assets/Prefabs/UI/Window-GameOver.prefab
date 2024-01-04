@@ -134,6 +134,80 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &58031237484780558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6963605144782591545}
+  - component: {fileID: 8340168997309153686}
+  - component: {fileID: 3352901687028684070}
+  m_Layer: 0
+  m_Name: UnityAdsDisplayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6963605144782591545
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58031237484780558}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5153109512473697378}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8340168997309153686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58031237484780558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ef5191f1c0e4b0cb6eaa384a4b61711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _platforms: 0b00000008000000
+  _availableIfInList: 0
+--- !u!114 &3352901687028684070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58031237484780558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e76e19285bb4039917d913bd81fb856, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onEnable:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 24dd6e9b5c2ab9440a83c76ac8d598c8, type: 2}
+        m_TargetAssemblyTypeName: ServicesUtils.AdsLegacy.AdTimer, com.facticus.services-utils
+        m_MethodName: ShowAdIfShould
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: a85fd161835689948951ff99aaf21ebe, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ServicesUtils.AdsLegacy.AdUnitData, com.facticus.services-utils
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1759736615671390599
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +480,130 @@ MonoBehaviour:
     _variableInstancer: {fileID: 0}
   _totalSoftCurrency: {fileID: 11400000, guid: 42be2050c7ef0dd4a924e5b556c3ae95, type: 2}
   _totalHardCurrency: {fileID: 11400000, guid: bbae57a5057d5a34c96e04c65528dd6c, type: 2}
+--- !u!1 &7225823577650118509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1359792681627045221}
+  - component: {fileID: 1320990578926083486}
+  - component: {fileID: 2710224348924817948}
+  - component: {fileID: 2443153265458381180}
+  m_Layer: 0
+  m_Name: CrazyGamesAdsDisplayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1359792681627045221
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7225823577650118509}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5153109512473697378}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1320990578926083486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7225823577650118509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ef5191f1c0e4b0cb6eaa384a4b61711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _platforms: 11000000
+  _availableIfInList: 0
+--- !u!114 &2710224348924817948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7225823577650118509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e76e19285bb4039917d913bd81fb856, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onEnable:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2443153265458381180}
+        m_TargetAssemblyTypeName: Services.CrazyGamesIntegration.CrazyGamesAdBreak,
+          com.minidgames.casualspaceship
+        m_MethodName: BeginAdBreak
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2443153265458381180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7225823577650118509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e924170bbf6446acbf495103ff1a094e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onAdBreakCompleted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 77658e4276bc594498142b732ef290fb, type: 2}
+        m_TargetAssemblyTypeName: Utils.ScriptableDebugLogger, com.facticus.utils
+        m_MethodName: DebugMessage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: crazy ad completed
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onAdBreakError:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 77658e4276bc594498142b732ef290fb, type: 2}
+        m_TargetAssemblyTypeName: Utils.ScriptableDebugLogger, com.facticus.utils
+        m_MethodName: DebugMessage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: crazy ad error
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onAdBreakRewardedCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  _onAdBreakRewardedError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8115952460222491711
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,7 +668,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5153109512473697378}
-  - component: {fileID: 2787163942178515387}
   m_Layer: 0
   m_Name: AdsDisplayer
   m_TagString: Untagged
@@ -490,36 +687,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6963605144782591545}
+  - {fileID: 1359792681627045221}
   m_Father: {fileID: 6101969042030622442}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2787163942178515387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8645855828362501712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e76e19285bb4039917d913bd81fb856, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _onEnable:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 24dd6e9b5c2ab9440a83c76ac8d598c8, type: 2}
-        m_TargetAssemblyTypeName: ServicesUtils.AdsLegacy.AdTimer, com.facticus.services-utils
-        m_MethodName: ShowAdIfShould
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a85fd161835689948951ff99aaf21ebe, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ServicesUtils.AdsLegacy.AdUnitData, com.facticus.services-utils
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &8649126591308917859
 GameObject:
   m_ObjectHideFlags: 0
