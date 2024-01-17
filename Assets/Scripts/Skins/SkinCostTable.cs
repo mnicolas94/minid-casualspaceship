@@ -13,7 +13,7 @@ namespace Skins
     public class SkinCostTable : ScriptableObject
     {
         [TableList(Draggable = false, ShowElementLabels = false)]
-        [SerializeField] private List<SkinCost> _costs;
+        [SerializeField] private List<SkinCost> _costs = new();
 
 #if UNITY_EDITOR
         private void OnEnable()
@@ -38,9 +38,14 @@ namespace Skins
             }
         }
 #endif
+        
         public IUnlockCost GetCost(AddressableSkinData skin)
         {
-            return _costs.Find(skinCost => skinCost.skin.Equals(skin)).unlockCost.Value;
+            var skinCostFound = _costs.Find(skinCost => skinCost.skin.Equals(skin));
+            var costSerializableInterface = skinCostFound.unlockCost;
+            var unlockCost = costSerializableInterface.Value;
+                
+            return unlockCost;
         }
     }
 

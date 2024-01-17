@@ -19,7 +19,7 @@ MonoBehaviour:
     _developmentBuild: 0
     _freeDiskSpaceBeforeBuild: 1
     _buildPlatform:
-      rid: 3334506971384512517
+      rid: 8263538368708345859
     _deployPlatform:
       rid: 3334506971384512515
   - _enabled: 0
@@ -43,10 +43,6 @@ MonoBehaviour:
       type: {class: Telegram, ns: Deploy.Editor.DeployPlatforms, asm: com.facticus.deploy.editor}
       data:
         message: Android build
-    - rid: 3334506971384512517
-      type: {class: Android, ns: Deploy.Editor.BuildPlatforms, asm: com.facticus.deploy.editor}
-      data:
-        appBundle: 0
     - rid: 8263538004916174850
       type: {class: WebGL, ns: Deploy.Editor.BuildPlatforms, asm: com.facticus.deploy.editor}
     - rid: 8263538006821175296
@@ -64,3 +60,7 @@ MonoBehaviour:
         status: draft
         inAppUpdatePriority: 5
         userFraction: 0.9999
+    - rid: 8263538368708345859
+      type: {class: Android, ns: Deploy.Editor.BuildPlatforms, asm: com.facticus.deploy.editor}
+      data:
+        appBundle: 0
