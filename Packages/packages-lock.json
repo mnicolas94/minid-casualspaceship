@@ -108,9 +108,10 @@
       "source": "git",
       "dependencies": {
         "com.facticus.utils": "0.10.0",
-        "com.unity.addressables": "1.19.18"
+        "com.unity.addressables": "1.19.18",
+        "com.unity.serialization": "3.1.1"
       },
-      "hash": "61aec339a59145f3b9b811a5a0f4d8ee9f13b931"
+      "hash": "e11baf0c62d43b64f456abd542ecfcfe410ebfc8"
     },
     "com.facticus.serializable-predicate": {
       "version": "https://github.com/mnicolas94/facticus-serializable-predicate.git",
@@ -342,12 +343,13 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.collections": {
-      "version": "1.2.4",
-      "depth": 1,
+      "version": "2.1.4",
+      "depth": 2,
       "source": "registry",
       "dependencies": {
-        "com.unity.burst": "1.6.6",
-        "com.unity.test-framework": "1.1.31"
+        "com.unity.burst": "1.8.4",
+        "com.unity.modules.unityanalytics": "1.0.0",
+        "com.unity.nuget.mono-cecil": "1.11.4"
       },
       "url": "https://packages.unity.com"
     },
@@ -409,6 +411,13 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.nuget.mono-cecil": {
+      "version": "1.11.4",
+      "depth": 3,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.nuget.newtonsoft-json": {
       "version": "3.2.1",
       "depth": 1,
@@ -434,6 +443,16 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.serialization": {
+      "version": "3.1.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.collections": "2.1.4",
+        "com.unity.burst": "1.7.2"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.services.analytics": {

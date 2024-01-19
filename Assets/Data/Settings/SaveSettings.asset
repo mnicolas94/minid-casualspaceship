@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SaveSettings
   m_EditorClassIdentifier: 
   _serializer:
-    rid: 0
+    rid: 8263538418990710786
   _encryptData: 1
   _searchDatabaseAssetsInPaths:
   - Assets/Data/Persistence
@@ -30,9 +30,5 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 0
-      type: {class: OdinPersistentSerializer, ns: SaveSystem.Serializers, asm: com.facticus.savesystem}
-      data:
-        _format: 0
-        _aotAdditionalTypes:
-        - OdinSerializer.OdinSerializer.StringSerializer
+    - rid: 8263538418990710786
+      type: {class: UnitySerializer, ns: SaveSystem.Serializers, asm: com.facticus.savesystem}

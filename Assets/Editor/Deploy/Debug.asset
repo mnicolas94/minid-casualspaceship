@@ -22,7 +22,7 @@ MonoBehaviour:
       rid: 8263538368708345859
     _deployPlatform:
       rid: 3334506971384512515
-  - _enabled: 0
+  - _enabled: 1
     _developmentBuild: 0
     _freeDiskSpaceBeforeBuild: 1
     _buildPlatform:
