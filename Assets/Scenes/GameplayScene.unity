@@ -751,6 +751,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c7336b4b7994c8bab9016d99cd85e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1280830834 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7668010778161588668, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
+  m_PrefabInstance: {fileID: 1734805288}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267b4579456b4ba4b595e39d472a28db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1523713023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,6 +1112,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 864845197761152366, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
+      propertyPath: _onInitialized.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 864845197761152366, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
+      propertyPath: _onInitialized.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 864845197761152366, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
+      propertyPath: _onInitialized.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1280830834}
+    - target: {fileID: 864845197761152366, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
+      propertyPath: _onInitialized.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 864845197761152366, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
+      propertyPath: _onInitialized.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Initialize
+      objectReference: {fileID: 0}
+    - target: {fileID: 864845197761152366, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
+      propertyPath: _onInitialized.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: ServicesUtils.Iap.IapInitializer, com.facticus.services-utils
+      objectReference: {fileID: 0}
+    - target: {fileID: 864845197761152366, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
+      propertyPath: _onInitialized.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2062192781212589394, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1140,6 +1179,10 @@ PrefabInstance:
     - target: {fileID: 2062192781212589394, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3467223136785245681, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8153742413880878971, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
       propertyPath: m_Name

@@ -129,7 +129,7 @@
         "com.unity.textmeshpro": "3.0.6",
         "net.tnrd.serializableinterface": "1.12.1"
       },
-      "hash": "59ca2fab0d2b68ca75bff7758ee870740ffcd39c"
+      "hash": "bb0d427785c160415c3821f9ed56945fa013eb84"
     },
     "com.facticus.unity-atoms-extensions": {
       "version": "https://github.com/mnicolas94/facticus-unity-atoms-extensions.git",
