@@ -1,5 +1,4 @@
 ﻿using System;
-using UnityEngine;
 using UnityEngine.AddressableAssets;
 
 namespace Skins
@@ -7,6 +6,10 @@ namespace Skins
     [Serializable]
     public class AddressableSkinData : AssetReferenceT<SkinData>
     {
+        public AddressableSkinData() : base("")
+        {
+        }
+
         public AddressableSkinData(string guid) : base(guid)
         {
         }
