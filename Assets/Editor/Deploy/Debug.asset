@@ -22,14 +22,14 @@ MonoBehaviour:
       rid: 8263538368708345859
     _deployPlatform:
       rid: 3334506971384512515
-  - _enabled: 0
+  - _enabled: 1
     _developmentBuild: 0
     _freeDiskSpaceBeforeBuild: 1
     _buildPlatform:
       rid: 8263538026796548102
     _deployPlatform:
       rid: 8263538026796548103
-  - _enabled: 1
+  - _enabled: 0
     _developmentBuild: 0
     _freeDiskSpaceBeforeBuild: 1
     _buildPlatform:
@@ -56,8 +56,8 @@ MonoBehaviour:
     - rid: 8263538026796548103
       type: {class: PlayStore, ns: Deploy.Editor.DeployPlatforms, asm: com.facticus.deploy.editor}
       data:
-        track: internal
-        status: draft
+        track: alpha
+        status: completed
         inAppUpdatePriority: 5
         userFraction: 0.9999
     - rid: 8263538368708345859
