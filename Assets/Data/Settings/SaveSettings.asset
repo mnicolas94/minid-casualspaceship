@@ -15,6 +15,8 @@ MonoBehaviour:
   _serializer:
     rid: 8263538418990710786
   _encryptData: 1
+  _guidsResolver:
+    rid: 8263538502375047170
   _searchDatabaseAssetsInPaths:
   - Assets/Data/Persistence
   _ignoreDatabaseAssetsInPaths: []
@@ -32,3 +34,24 @@ MonoBehaviour:
     RefIds:
     - rid: 8263538418990710786
       type: {class: UnitySerializer, ns: SaveSystem.Serializers, asm: com.facticus.savesystem}
+    - rid: 8263538502375047170
+      type: {class: GuidsDatabase, ns: SaveSystem.GuidsResolve, asm: com.facticus.savesystem}
+      data:
+        _assets:
+        - {fileID: 11400000, guid: 3b08a8ff033c1314e8a52c15159e9c34, type: 2}
+        - {fileID: 11400000, guid: 15dd390587e189c49bf87ac68bdee5e7, type: 2}
+        - {fileID: 11400000, guid: b2c44eaf560dcda4c96d0ac3a54bbf4f, type: 2}
+        - {fileID: 11400000, guid: 5fa167bd104300f4797eba203049b187, type: 2}
+        - {fileID: 11400000, guid: bbae57a5057d5a34c96e04c65528dd6c, type: 2}
+        - {fileID: 11400000, guid: 909c1e581fbe5a044b7b24a94bcbf555, type: 2}
+        - {fileID: 11400000, guid: 42be2050c7ef0dd4a924e5b556c3ae95, type: 2}
+        - {fileID: 11400000, guid: f27bba93f5af7dc41b73abd26796d96c, type: 2}
+        _guids:
+        - 3b08a8ff033c1314e8a52c15159e9c34
+        - 15dd390587e189c49bf87ac68bdee5e7
+        - b2c44eaf560dcda4c96d0ac3a54bbf4f
+        - 5fa167bd104300f4797eba203049b187
+        - bbae57a5057d5a34c96e04c65528dd6c
+        - 909c1e581fbe5a044b7b24a94bcbf555
+        - 42be2050c7ef0dd4a924e5b556c3ae95
+        - f27bba93f5af7dc41b73abd26796d96c

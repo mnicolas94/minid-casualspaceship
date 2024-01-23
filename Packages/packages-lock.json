@@ -58,7 +58,7 @@
         "com.facticus.utils": "0.12.64",
         "com.mackysoft.serializereference-extensions": "1.1.7"
       },
-      "hash": "e11404154e79772ae6258cc974a4d1dd092d860b"
+      "hash": "6067284963db5385b8513a42b7ded919a64e72a2"
     },
     "com.facticus.fonts-collection": {
       "version": "https://github.com/mnicolas94/facticus-fonts-collection.git",
@@ -108,10 +108,11 @@
       "source": "git",
       "dependencies": {
         "com.facticus.utils": "0.10.0",
+        "com.mackysoft.serializereference-extensions": "1.2.1",
         "com.unity.addressables": "1.19.18",
         "com.unity.serialization": "3.1.1"
       },
-      "hash": "e11baf0c62d43b64f456abd542ecfcfe410ebfc8"
+      "hash": "4f28cc132222ec33f2b850b585cb64099e184fbb"
     },
     "com.facticus.serializable-predicate": {
       "version": "https://github.com/mnicolas94/facticus-serializable-predicate.git",
@@ -171,8 +172,8 @@
       "url": "https://package.openupm.com"
     },
     "com.mackysoft.serializereference-extensions": {
-      "version": "1.1.9",
-      "depth": 0,
+      "version": "1.2.1",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://package.openupm.com"

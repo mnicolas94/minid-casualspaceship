@@ -26,10 +26,6 @@ namespace Currency
         public async Task<bool> PayCost(CancellationToken ct)
         {
             var canAfford = await CanAfford(ct);
-            Debug.Log($"canAfford={canAfford}");
-            Debug.Log($"currency={_currency.Variable.Value}; {_currency.Variable}; {_currency}");
-            Debug.Log($"currency guid={AssetGuidsDatabase.Instance.GetGuid(_currency.Variable)}");
-            Debug.Log($"cost={_cost.Value}");
             if (canAfford)
             {
                 _currency.Variable.Value -= _cost;

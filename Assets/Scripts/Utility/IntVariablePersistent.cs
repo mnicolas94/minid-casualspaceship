@@ -1,6 +1,7 @@
 ﻿using System;
 using SaveSystem;
 using SaveSystem.Attributes;
+using SaveSystem.GuidsResolve;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
@@ -37,7 +38,7 @@ namespace Utility
             }
         }
 
-        public void OnBeforeSave(AssetGuidsDatabase guidsDatabase)
+        public void OnBeforeSave(IGuidResolver guidsDatabase)
         {
             _value = _variable.Value;
         }
@@ -52,7 +53,7 @@ namespace Utility
             
         }
 
-        public void OnAfterLoad(AssetGuidsDatabase guidsDatabase)
+        public void OnAfterLoad(IGuidResolver guidsDatabase)
         {
             _variable.Value = _value;
         }
