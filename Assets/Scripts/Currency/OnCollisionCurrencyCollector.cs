@@ -6,7 +6,7 @@ using Utils.Extensions;
 
 namespace Currency
 {
-    public class CollectableCurrency : MonoBehaviour
+    public class OnCollisionCurrencyCollector : MonoBehaviour
     {
         [SerializeField] private IntReference _toCollect;
         [SerializeField] private IntReference _currencyCollectedCount;

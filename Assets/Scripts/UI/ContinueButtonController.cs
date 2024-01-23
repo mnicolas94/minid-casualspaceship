@@ -11,12 +11,13 @@ namespace UI
     {
         [SerializeField] private Button _continueButton;
         [SerializeField] private CanvasGroup _canvasGroup;
+        [SerializeField] private Image _currencyIcon;
         [SerializeField] private TextMeshProUGUI _costText;
         [SerializeField] private string _costFormat;
         
         [SerializeField] private VoidBaseEventReference _continueGameEvent;
         
-        [SerializeField] private IntVariable _hardCurrency;
+        [SerializeField] private Currency.Currency _currency;
         [SerializeField] private IntReference _currencyCost;
 
         private void Start()
@@ -28,6 +29,7 @@ namespace UI
 
         private void UpdateUi()
         {
+            _currencyIcon.sprite = _currency.Sprite;
             _costText.text = string.Format(_costFormat, $"{_currencyCost.Value}");
         }
 
@@ -35,12 +37,11 @@ namespace UI
         {
             _canvasGroup.interactable = false;
             
-            var canAfford = _hardCurrency.Value >= _currencyCost;
+            var canAfford = _currency.Variable.Value >= _currencyCost;
 
             if (canAfford)
             {
-                _hardCurrency.Value -= _currencyCost;
-                await _hardCurrency.Save();
+                _currency.Variable.Value -= _currencyCost;
                 
                 _continueGameEvent.Event.Raise();
             }
