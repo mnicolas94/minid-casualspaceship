@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using SaveSystem;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
@@ -7,10 +8,7 @@ namespace Currency
 {
     public class GameOverCurrenciesUpdater : MonoBehaviour
     {
-        [SerializeField] private IntReference _currentSoftCurrency;
-        [SerializeField] private IntReference _currentHardCurrency;
-        [SerializeField] private IntVariable _totalSoftCurrency;
-        [SerializeField] private IntVariable _totalHardCurrency;
+        [SerializeField] private List<Currency> _currencies;
 
         private void OnEnable()
         {
@@ -19,11 +17,11 @@ namespace Currency
 
         private void CollectCurrencies()
         {
-            _totalSoftCurrency.Value += _currentSoftCurrency;
-            _totalHardCurrency.Value += _currentHardCurrency;
-            
-            _currentSoftCurrency.Value = 0;
-            _currentHardCurrency.Value = 0;
+            foreach (var currency in _currencies)
+            {
+                currency.Variable.Value += currency.CurrentInGame.Value;
+                currency.CurrentInGame.Value = 0;
+            }
         }
     }
 }

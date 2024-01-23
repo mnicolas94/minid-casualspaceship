@@ -466,6 +466,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3871f69be4fd4134ac2b1a25d62b0169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _currencies:
+  - {fileID: 11400000, guid: 5db79252fe7e9c844ab14014509c5da9, type: 2}
+  - {fileID: 11400000, guid: e122b2272247cab4289dfcc273988fb4, type: 2}
   _currentSoftCurrency:
     _usage: 2
     _value: 0
