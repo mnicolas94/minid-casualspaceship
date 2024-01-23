@@ -29,7 +29,6 @@ namespace Currency
             if (canAfford)
             {
                 _currency.Variable.Value -= _cost;
-                await _currency.Variable.Save();
             }
 
             return canAfford;
