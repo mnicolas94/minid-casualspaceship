@@ -15,7 +15,7 @@ MonoBehaviour:
   _repositoryBranchOrTag: main
   _overrideVariables: []
   _platforms:
-  - _enabled: 1
+  - _enabled: 0
     _developmentBuild: 0
     _freeDiskSpaceBeforeBuild: 1
     _buildPlatform:
