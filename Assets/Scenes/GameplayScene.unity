@@ -1113,6 +1113,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 864845197761152366, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
+      propertyPath: _environmentName._value
+      value: development
+      objectReference: {fileID: 0}
+    - target: {fileID: 864845197761152366, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
       propertyPath: _onInitialized.m_PersistentCalls.m_Calls.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -1179,6 +1183,10 @@ PrefabInstance:
     - target: {fileID: 2062192781212589394, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3192098786878722489, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
+      propertyPath: _authenticators.Array.data[0]._platform
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3467223136785245681, guid: eb36c228af5b6a6409beac4c0e224c03, type: 3}
       propertyPath: m_IsActive
