@@ -2,6 +2,8 @@
     "name": "com.minidgames.casualspaceship.Editor",
     "rootNamespace": "",
     "references": [
+        "GUID:fd8731eefd9c3244ebcecf27d19df7e7",
+        "GUID:c35c6d9084ba1a541868fbd8c50a585a",
         "GUID:591197a4b0d08be4bb2689923abe1d83"
     ],
     "includePlatforms": [
