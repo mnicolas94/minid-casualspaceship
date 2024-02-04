@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using GenericUnityObjects;
 using SaveSystem;
 using UnityEngine;
 
 namespace Unlockables
 {
-    public abstract class StorageLocal<T> : ScriptableObject, IUnlockablesStorage<T>
+    [CreateGenericAssetMenu]
+    public class StorageLocal<T> : ScriptableObject, IUnlockablesStorage<T>
     {
         [SerializeField] private List<T> _list = new ();
 

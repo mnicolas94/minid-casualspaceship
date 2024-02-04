@@ -21,6 +21,7 @@
     "com.jnk.tinycontainer": "https://github.com/mnicolas94/fork-TinyContainer.git?path=Assets/TinyContainer",
     "com.mackysoft.choice": "1.2.3",
     "com.mackysoft.serializereference-extensions": "1.1.9",
+    "com.solidalloy.generic-unity-objects": "https://github.com/mnicolas94/SolidAlloy-GenericUnityObjects.git",
     "com.solidalloy.type-references": "https://github.com/mnicolas94/SolidAlloy-ClassTypeReference-for-Unity.git",
     "com.solidalloy.unity-dropdown": "https://github.com/mnicolas94/SolidAlloy-UnityDropdown.git",
     "com.solidalloy.util": "https://github.com/mnicolas94/SolidAlloy-SolidUtilities.git",

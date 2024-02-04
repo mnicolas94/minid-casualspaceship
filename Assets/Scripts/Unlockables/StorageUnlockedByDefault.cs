@@ -3,10 +3,12 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using GenericUnityObjects;
 using UnityEngine;
 
 namespace Unlockables
 {
+    [CreateGenericAssetMenu]
     public class StorageUnlockedByDefault<T> : ScriptableObject, IUnlockablesStorage<T>
     {
         [SerializeField] private List<T> _list;

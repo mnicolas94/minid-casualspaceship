@@ -155,7 +155,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "d27fce0368b938ccd4a77c5e66abe9b0744065be"
+      "hash": "837e2b8618427b3c220298d8062a823c519124f7"
     },
     "com.jnk.tinycontainer": {
       "version": "https://github.com/mnicolas94/fork-TinyContainer.git?path=Assets/TinyContainer",
@@ -177,6 +177,17 @@
       "source": "registry",
       "dependencies": {},
       "url": "https://package.openupm.com"
+    },
+    "com.solidalloy.generic-unity-objects": {
+      "version": "https://github.com/mnicolas94/SolidAlloy-GenericUnityObjects.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.solidalloy.util": "1.40.0",
+        "com.solidalloy.type-references": "2.16.0",
+        "com.unity.settings-manager": "1.0.3"
+      },
+      "hash": "72f44cf582647cdf51469223b5b791584d269106"
     },
     "com.solidalloy.type-references": {
       "version": "https://github.com/mnicolas94/SolidAlloy-ClassTypeReference-for-Unity.git",

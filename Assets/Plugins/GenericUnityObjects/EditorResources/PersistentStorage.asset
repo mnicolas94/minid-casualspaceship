@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d75b2e71a864ef9b6262b87c89b28d0, type: 3}
+  m_Name: PersistentStorage
+  m_EditorClassIdentifier: 
+  _menuItemMethods:
+  - _typeName: Unlockables.StorageComposite`1, com.facticus.unlockables
+    _fileName: New StorageComposite`1
+    _menuName: StorageComposite<T>
+    _order: 0
+  - _typeName: Unlockables.StorageLocal`1, com.facticus.unlockables
+    _fileName: New StorageLocal`1
+    _menuName: StorageLocal<T>
+    _order: 0
+  - _typeName: Unlockables.StorageUnlockedByDefault`1, com.facticus.unlockables
+    _fileName: New StorageUnlockedByDefault`1
+    _menuName: StorageUnlockedByDefault<T>
+    _order: 0
+  _afterReloadEvent: []
+  _savedData:
+    _keys:
+    - FailedAssemblyGuids
+    - GenericSOType
+    - FileName
+    _values:
+    - '{"Data":["6e4696bdbb26557429fa6bf3e2a62147","4ba8041fb2e1aff44bf513776d11c319","cd6e30daffedfaa4db2590e7b16930c8","2c168ac495c2c4f428b650903bae805b","f05ecf1e3c6994a429fd73925b97269e","5c06a4e142321df4b8447f9792b64440","ecebe5e834f7052459e04a6df64481e0"]}'
+    - '{"Data":{"GuidAssignmentFailed":false,"GUID":"","_typeNameAndAssembly":"Unlockables.StorageLocal`1[[Skins.SkinData,
+      com.minidgames.casualspaceship, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+      com.facticus.unlockables","_suppressLogs":false}}'
+    - '{"Data":"New StorageLocal`1"}'
