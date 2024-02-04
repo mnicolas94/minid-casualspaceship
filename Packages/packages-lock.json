@@ -178,17 +178,6 @@
       "dependencies": {},
       "url": "https://package.openupm.com"
     },
-    "com.solidalloy.generic-unity-objects": {
-      "version": "https://github.com/mnicolas94/SolidAlloy-GenericUnityObjects.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.solidalloy.util": "1.40.0",
-        "com.solidalloy.type-references": "2.16.0",
-        "com.unity.settings-manager": "1.0.3"
-      },
-      "hash": "72f44cf582647cdf51469223b5b791584d269106"
-    },
     "com.solidalloy.type-references": {
       "version": "https://github.com/mnicolas94/SolidAlloy-ClassTypeReference-for-Unity.git",
       "depth": 0,
