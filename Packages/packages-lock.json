@@ -103,7 +103,7 @@
       "hash": "1c286b1ac1bd44486c7502893447f6863e1c5a9e"
     },
     "com.facticus.savesystem": {
-      "version": "https://github.com/mnicolas94/unity-save-system.git",
+      "version": "https://github.com/mnicolas94/unity-save-system.git#refactor/remove_odin",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -112,7 +112,7 @@
         "com.unity.addressables": "1.19.18",
         "com.unity.serialization": "3.1.1"
       },
-      "hash": "4f28cc132222ec33f2b850b585cb64099e184fbb"
+      "hash": "3d69dc513036674b0e51a06678db9f20c095bd36"
     },
     "com.facticus.serializable-predicate": {
       "version": "https://github.com/mnicolas94/facticus-serializable-predicate.git",

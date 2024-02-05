@@ -12,7 +12,7 @@
     "com.facticus.loadingutils": "https://github.com/mnicolas94/unity-loading-utils.git",
     "com.facticus.missions": "https://github.com/mnicolas94/facticus-missions.git",
     "com.facticus.modelview": "https://github.com/mnicolas94/facticus-modelview.git",
-    "com.facticus.savesystem": "https://github.com/mnicolas94/unity-save-system.git",
+    "com.facticus.savesystem": "https://github.com/mnicolas94/unity-save-system.git#refactor/remove_odin",
     "com.facticus.serializable-predicate": "https://github.com/mnicolas94/facticus-serializable-predicate.git",
     "com.facticus.services-utils": "https://github.com/mnicolas94/facticus-services-utils.git",
     "com.facticus.unity-atoms-extensions": "https://github.com/mnicolas94/facticus-unity-atoms-extensions.git",

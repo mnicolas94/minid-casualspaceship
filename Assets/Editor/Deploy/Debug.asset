@@ -15,7 +15,7 @@ MonoBehaviour:
   _repositoryBranchOrTag: main
   _overrideVariables: []
   _platforms:
-  - _enabled: 0
+  - _enabled: 1
     _developmentBuild: 0
     _freeDiskSpaceBeforeBuild: 1
     _buildPlatform:
@@ -29,7 +29,7 @@ MonoBehaviour:
       rid: 8263538026796548102
     _deployPlatform:
       rid: 8263538026796548103
-  - _enabled: 1
+  - _enabled: 0
     _developmentBuild: 0
     _freeDiskSpaceBeforeBuild: 1
     _buildPlatform:
