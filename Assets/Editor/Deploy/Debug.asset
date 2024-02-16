@@ -45,6 +45,7 @@ MonoBehaviour:
         message: Android build
     - rid: 8263538004916174850
       type: {class: WebGL, ns: Deploy.Editor.BuildPlatforms, asm: com.facticus.deploy.editor}
+      data: 
     - rid: 8263538006821175296
       type: {class: Itch, ns: Deploy.Editor.DeployPlatforms, asm: com.facticus.deploy.editor}
       data:
