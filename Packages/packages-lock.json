@@ -7,6 +7,13 @@
       "dependencies": {},
       "url": "https://package.openupm.com"
     },
+    "com.brunomikoski.scriptableobjectcollection": {
+      "version": "2.2.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.codewriter.triinspector": {
       "version": "https://github.com/codewriter-packages/Tri-Inspector.git",
       "depth": 0,
@@ -58,7 +65,7 @@
         "com.facticus.utils": "0.12.64",
         "com.mackysoft.serializereference-extensions": "1.1.7"
       },
-      "hash": "6067284963db5385b8513a42b7ded919a64e72a2"
+      "hash": "7ddfac012662ee411ccb976a87bea53a8db3348f"
     },
     "com.facticus.fonts-collection": {
       "version": "https://github.com/mnicolas94/facticus-fonts-collection.git",
