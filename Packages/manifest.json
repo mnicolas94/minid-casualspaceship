@@ -7,7 +7,7 @@
     "com.facticus.animator-sequencer-extensions": "https://github.com/mnicolas94/facticus-animator-sequencer-extensions.git",
     "com.facticus.asyncutils": "https://github.com/mnicolas94/unity-async-utils.git",
     "com.facticus.audio": "https://github.com/mnicolas94/facticus-audio.git",
-    "com.facticus.deploy": "https://github.com/mnicolas94/facticus-deploy.git#feat/test_unity_secrets",
+    "com.facticus.deploy": "https://github.com/mnicolas94/facticus-deploy.git",
     "com.facticus.fonts-collection": "https://github.com/mnicolas94/facticus-fonts-collection.git",
     "com.facticus.git-team": "https://github.com/mnicolas94/facticus-git-team.git",
     "com.facticus.loadingutils": "https://github.com/mnicolas94/unity-loading-utils.git",
