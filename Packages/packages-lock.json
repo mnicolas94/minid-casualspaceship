@@ -58,14 +58,14 @@
       "hash": "a508df47b1685e507455bf65db0682244cc331a1"
     },
     "com.facticus.deploy": {
-      "version": "https://github.com/mnicolas94/facticus-deploy.git",
+      "version": "https://github.com/mnicolas94/facticus-deploy.git#feat/test_unity_secrets",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.facticus.utils": "0.12.64",
         "com.mackysoft.serializereference-extensions": "1.1.7"
       },
-      "hash": "92d3b5c3d2a9c9ba0dfc60a89b284781f537958e"
+      "hash": "da15694b108730a1126ee5cdd0e8d04d8de06a66"
     },
     "com.facticus.fonts-collection": {
       "version": "https://github.com/mnicolas94/facticus-fonts-collection.git",
